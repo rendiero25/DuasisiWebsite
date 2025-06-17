@@ -2,4 +2,7 @@
 
 @theme {
   --font-primary: "Outfit", sans-serif;
+  --color-primary: #9DAF89;
+  --color-black: #131E12;
+  --color-button: #FFB843;
 }
