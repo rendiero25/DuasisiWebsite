@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 
 import Button from "./Button.jsx";
 
@@ -13,18 +14,20 @@ const Header = ({ headerWidth }) => {
     const isActiveMobileMenu = () => {setShowMobileMenu(true)};
     const IsNotActiveMobileMenu = () => {setShowMobileMenu(false)};
 
+    const navigate = useNavigate();
+
     return(
         <div className={headerWidth}>
-            <div className="px-6 xl:pr-12 xl:pl-20">
+            <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
                 <div className="flex flex-row justify-between items-center pt-4">
-                    <img src={Logo} alt="logo-dss" className="w-35 " />
+                    <img src={Logo} alt="logo-dss" className="w-35 3xl:w-45" onClick={() => navigate("/")} />
 
-                    <ul className="hidden xl:flex flex-row gap-4">
-                        <li>Beranda</li>
-                        <li>Tentang Kami</li>
-                        <li>Layanan</li>
-                        <li>Lowongan</li>
-                        <li>Kontak Kami</li>
+                    <ul className="hidden xl:flex flex-row gap-4 xl:gap-8 text-md xl:text-xl 3xl:mr-5">
+                        <li onClick={() => navigate("/")}>Beranda</li>
+                        <li onClick={() => navigate("/tentang-kami")}>Tentang Kami</li>
+                        <li onClick={() => navigate("/layanan")}>Layanan</li>
+                        <li onClick={() => navigate("/lowongan")}>Lowongan</li>
+                        <li onClick={() => navigate("/kontak-kami")}>Kontak Kami</li>
                     </ul>
 
                     <MdMenu className="size-8 xl:hidden" onClick={isActiveMobileMenu}/>
@@ -34,18 +37,16 @@ const Header = ({ headerWidth }) => {
             {showmobilemenu && (
                 <div className="xl:hidden absolute z-20 top-0 bg-black flex flex-col gap-4 justify-between items-start px-6 py-10 w-full h-screen">
                     <div className="flex flex-row justify-between items-center gap-4 w-full">
-                        <img src={LogoWhite} alt="logo-dsswhite" className="w-50" />
+                        <img src={LogoWhite} alt="logo-dsswhite" className="w-50" onClick={() => navigate("/")}/>
                         <IoMdClose className="size-12 self-center text-white" onClick={IsNotActiveMobileMenu}/>
                     </div>
 
-
                     <ul className="flex flex-col gap-6 text-white font-reguler text-5xl">
-                        <li>Beranda</li>
-                        <li>Tentang Kami</li>
-                        <li>Kontak</li>
-                        <li>Layanan</li>
-                        <li>Lowongan</li>
-                        <li>Kontak Kami</li>
+                        <li onClick={() => navigate("/")}>Beranda</li>
+                        <li onClick={() => navigate("/tentang-kami")}>Tentang Kami</li>
+                        <li onClick={() => navigate("/layanan")}>Layanan</li>
+                        <li onClick={() => navigate("/lowongan")}>Lowongan</li>
+                        <li onClick={() => navigate("/kontak-kami")}>Kontak Kami</li>
                     </ul>
 
                     <Button
