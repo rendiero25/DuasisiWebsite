@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay} from "swiper/modules";
+import { Navigation, Pagination, Autoplay} from "swiper/modules";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Slider = ({
                     testimonial1, testimonial2, testimonial3, testimonial4, testimonial5,
@@ -13,9 +14,9 @@ const Slider = ({
     return(
         <div className="w-full">
             <Swiper
-                modules={[Navigation, Autoplay]}
+                modules={[Navigation, Pagination, Autoplay]}
+                pagination={{clickable: true}}
                 spaceBetween={30}
-                navigation={true}
                 slidesPerView={1}
                 breakpoints={{
                     1280: {
@@ -23,11 +24,12 @@ const Slider = ({
                     }
                 }}
                 className="">
-                    <SwiperSlide>
-                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-center items-center xl:items-start gap-4 w-full h-auto">
+
+                    <SwiperSlide className="pb-10 xl:pb-20">
+                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50">
                             <p className="text-sm font-medium text-white text-left leading-normal">{testimonial1}</p>
-                            <div className="flex flex-row justify-between items-center gap-2">
-                                <img src={image1} alt="persontesti1-image" className="size-12 rounded-full"/>
+                            <div className="flex flex-row justify-between items-start gap-2">
+                                <img src={image1} alt="persontesti1-image" className="size-12 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
                                     <h4 className="text-white font-bold text-sm">{name1}</h4>
                                     <h4 className="text-white font-reguler text-xs">{position1}</h4>
@@ -37,10 +39,10 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-center items-center xl:items-start gap-4 w-full h-auto">
-                            <p className="text-sm font-medium text-white text-left leading-normal">{testimonial2}</p>
+                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50">
+                            <p className="text-sm xl:text-md font-medium text-white text-left leading-normal">{testimonial2}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
-                                <img src={image2} alt="persontesti1-image" className="size-12 rounded-full"/>
+                                <img src={image2} alt="persontesti1-image" className="size-12 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
                                     <h4 className="text-white font-bold text-sm">{name2}</h4>
                                     <h4 className="text-white font-reguler text-xs">{position2}</h4>
@@ -50,10 +52,10 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-center items-center xl:items-start gap-4 w-full h-auto">
-                            <p className="text-sm font-medium text-white text-left leading-normal">{testimonial3}</p>
+                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50">
+                            <p className="text-sm xl:text-md font-medium text-white text-left leading-normal">{testimonial3}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
-                                <img src={image3} alt="persontesti1-image" className="size-12 rounded-full"/>
+                                <img src={image3} alt="persontesti1-image" className="size-12 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
                                     <h4 className="text-white font-bold text-sm">{name3}</h4>
                                     <h4 className="text-white font-reguler text-xs">{position3}</h4>
@@ -63,10 +65,10 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-center items-center xl:items-start gap-4 w-full h-auto">
-                            <p className="text-sm font-medium text-white text-left leading-normal">{testimonial4}</p>
+                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50">
+                            <p className="text-sm xl:text-md font-medium text-white text-left leading-normal">{testimonial4}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
-                                <img src={image4} alt="persontesti1-image" className="size-12 rounded-full"/>
+                                <img src={image4} alt="persontesti1-image" className="size-12 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
                                     <h4 className="text-white font-bold text-sm">{name4}</h4>
                                     <h4 className="text-white font-reguler text-xs">{position4}</h4>
@@ -76,10 +78,10 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-center items-center xl:items-start gap-4 w-full h-auto">
-                            <p className="text-sm font-medium text-white text-left leading-normal">{testimonial5}</p>
+                        <div className="bg-primary p-6 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50">
+                            <p className="text-sm xl:text-md font-medium text-white text-left leading-normal">{testimonial5}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
-                                <img src={image5} alt="persontesti1-image" className="size-12 rounded-full"/>
+                                <img src={image5} alt="persontesti1-image" className="size-12 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
                                     <h4 className="text-white font-bold text-sm">{name5}</h4>
                                     <h4 className="text-white font-reguler text-xs">{position5}</h4>

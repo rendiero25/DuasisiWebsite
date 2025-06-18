@@ -9,13 +9,13 @@ const App = () => {
     return(
         <Router>
             <div className="p-0 m-0 box-border font-primary">
-                <Header />
+
 
                 <Routes>
                     <Route path="/" element={<Index />} />
                 </Routes>
 
-                {/*<Footer />*/}
+                <Footer />
             </div>
         </Router>
     )
