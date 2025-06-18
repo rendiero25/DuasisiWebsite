@@ -12,6 +12,8 @@ const TentangKami = () => {
                             <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Apa itu jasa</h2>
                             <h1 className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-black text-center xl:text-left">Outsourcing?</h1>
                         </div>
+
+                        <div></div>
                     </div>
                 </div>
             </div>
