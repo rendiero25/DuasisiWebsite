@@ -67,12 +67,12 @@ const Index = () => {
                     <div className="relative flex flex-col justify-end items-center h-full">
                         <img src={OfficeActivity} alt="office-activity" className="w-full h-full object-cover"/>
 
-                        <div className="absolute flex flex-col justify-between h-full px-8 xl:px-12 3xl:px-16 pb-8 3xl:pb-16 pt-4">
+                        <div className="absolute flex flex-col justify-between h-full px-8 xl:px-12 3xl:px-16 pb-8 3xl:pb-16 pt-8">
                             <Button
                                 buttonClassName="invisible xl:visible flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
                                 spanClassName="font-reguler text-black text-md 3xl:text-2xl"
                                 buttonName="Konsultasi Yuk!"
-                                circleClassName="bg-black rounded-full p-3 xl:p-5 3xl:p-4"
+                                circleClassName="bg-black rounded-full p-2 xl:p-3"
                                 arrowClassName="size-4 text-button"
                             />
 
@@ -119,7 +119,7 @@ const Index = () => {
                             </div>
 
                             <div className="absolute bg-black size-15 3xl:size-95 rounded-full blur-[13rem] -ml-5 mt-8 3xl:mt-[50rem]"></div>
-                            <div className="absolute bg-black size-20 3xl:size-95 rounded-full blur-[13rem] mt-30 3xl:-mt-[50rem] mr-5 3xl:-mr-[10rem] right-0"></div>
+                            <div className="absolute bg-black size-20 3xl:size-95 rounded-full blur-[16rem] mt-30 3xl:-mt-[50rem] mr-5 3xl:ml-[80rem]"></div>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@ const Index = () => {
                 />
 
                 <div className="absolute bg-black size-15 3xl:size-25 rounded-full blur-[5rem] -ml-5 mt-8"></div>
-                <div className="absolute bg-black size-20 3xl:size-35 rounded-full blur-[5rem] mt-30 3xl:mt-40 -mr-5 right-0"></div>
+                <div className="absolute bg-black size-20 3xl:size-35 rounded-full blur-[6rem] mt-30 3xl:mt-50 -mr-5 3xl:ml-[110rem]"></div>
             </div>
         </div>
     )

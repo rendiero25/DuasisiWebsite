@@ -1,0 +1,213 @@
+{
+  "status": "success",
+  "message": "Data lowongan berhasil diambil",
+  "data": [
+    {
+      "id": 1,
+      "namaPekerjaan": "Staff Admin",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Sudirman No. 45, Jakarta Selatan",
+      "deskripsiPekerjaan": "Bertanggung jawab dalam mengelola administrasi kantor, data entry, filing dokumen, dan mendukung operasional harian perusahaan. Kandidat akan bekerja dalam tim yang dinamis dan berkontribusi dalam meningkatkan efisiensi kerja.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal SMA/SMK sederajat",
+        "Menguasai Microsoft Office (Word, Excel, PowerPoint)",
+        "Memiliki kemampuan komunikasi yang baik",
+        "Teliti dan dapat bekerja dalam tim",
+        "Pengalaman kerja minimal 1 tahun (fresh graduate welcome)"
+      ],
+      "gaji": "Rp 4.500.000 - Rp 5.500.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-07-15",
+      "postedDate": "2025-06-10"
+    },
+    {
+      "id": 2,
+      "namaPekerjaan": "Customer Service Representative",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Gatot Subroto No. 123, Jakarta Pusat",
+      "deskripsiPekerjaan": "Menangani pertanyaan dan keluhan pelanggan melalui telepon, email, dan chat. Memberikan solusi terbaik untuk kepuasan pelanggan dan membangun hubungan jangka panjang dengan klien perusahaan.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal D3 dari jurusan apapun",
+        "Memiliki kemampuan komunikasi verbal dan written yang excellent",
+        "Sabar dalam menghadapi pelanggan",
+        "Dapat bekerja shift dan target oriented",
+        "Pengalaman di bidang customer service minimal 6 bulan"
+      ],
+      "gaji": "Rp 4.000.000 - Rp 5.000.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Pusat",
+      "deadline": "2025-07-20",
+      "postedDate": "2025-06-12"
+    },
+    {
+      "id": 3,
+      "namaPekerjaan": "Marketing Executive",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. HR Rasuna Said No. 88, Jakarta Selatan",
+      "deskripsiPekerjaan": "Mengembangkan strategi marketing, mengelola kampanye digital, melakukan riset pasar, dan membangun brand awareness. Berkolaborasi dengan tim kreatif untuk menciptakan konten marketing yang engaging dan efektif.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal S1 Marketing/Komunikasi/Business",
+        "Menguasai digital marketing tools (Google Ads, Facebook Ads, Instagram)",
+        "Kreatif dan memiliki kemampuan analisis yang baik",
+        "Memahami social media management",
+        "Pengalaman minimal 2 tahun di bidang marketing"
+      ],
+      "gaji": "Rp 6.000.000 - Rp 8.000.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-07-25",
+      "postedDate": "2025-06-15"
+    },
+    {
+      "id": 4,
+      "namaPekerjaan": "Warehouse Staff",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Raya Bekasi KM 18, Bekasi Timur",
+      "deskripsiPekerjaan": "Bertanggung jawab dalam penerimaan, penyimpanan, dan pengiriman barang. Melakukan stock opname, memastikan kualitas barang, dan menjaga kebersihan serta keamanan gudang sesuai dengan SOP perusahaan.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal SMA/SMK",
+        "Mampu mengangkat beban hingga 25kg",
+        "Memiliki SIM A lebih diutamakan",
+        "Dapat bekerja lembur jika diperlukan",
+        "Pengalaman di warehouse minimal 1 tahun"
+      ],
+      "gaji": "Rp 4.200.000 - Rp 4.800.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Bekasi",
+      "deadline": "2025-07-18",
+      "postedDate": "2025-06-08"
+    },
+    {
+      "id": 5,
+      "namaPekerjaan": "Graphic Designer",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Kemang Raya No. 67, Jakarta Selatan",
+      "deskripsiPekerjaan": "Membuat desain visual untuk berbagai media promosi, website, social media, dan materi marketing lainnya. Berkolaborasi dengan tim marketing untuk menghasilkan desain yang sesuai dengan brand identity perusahaan.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal D3 Desain Grafis/Visual Communication Design",
+        "Menguasai Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+        "Memiliki portfolio yang menarik",
+        "Kreatif dan mengikuti tren desain terkini",
+        "Pengalaman minimal 1-2 tahun di bidang graphic design"
+      ],
+      "gaji": "Rp 5.000.000 - Rp 7.000.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-07-30",
+      "postedDate": "2025-06-18"
+    },
+    {
+      "id": 6,
+      "namaPekerjaan": "Sales Representative",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Thamrin No. 101, Jakarta Pusat",
+      "deskripsiPekerjaan": "Mencari prospek baru, melakukan presentasi produk, negosiasi harga, dan menutup penjualan. Membangun dan memelihara hubungan baik dengan klien untuk mencapai target penjualan yang telah ditetapkan perusahaan.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal SMA/D3 dari jurusan apapun",
+        "Memiliki kemampuan komunikasi dan presentasi yang baik",
+        "Target oriented dan dapat bekerja under pressure",
+        "Memiliki kendaraan sendiri (motor/mobil)",
+        "Pengalaman sales minimal 1 tahun lebih diutamakan"
+      ],
+      "gaji": "Rp 4.500.000 - Rp 8.000.000 (Basic + Komisi)",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Pusat",
+      "deadline": "2025-08-05",
+      "postedDate": "2025-06-20"
+    },
+    {
+      "id": 7,
+      "namaPekerjaan": "Accounting Staff",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Kuningan Barat No. 45, Jakarta Selatan",
+      "deskripsiPekerjaan": "Mengelola pencatatan transaksi keuangan, membuat laporan keuangan bulanan, rekonsiliasi bank, dan membantu dalam proses audit. Memastikan semua transaksi tercatat dengan akurat sesuai standar akuntansi.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal D3 Akuntansi/Keuangan",
+        "Menguasai software akuntansi (MYOB, Accurate, atau sejenisnya)",
+        "Memahami perpajakan dasar",
+        "Teliti dan detail oriented",
+        "Pengalaman minimal 1-2 tahun di bidang accounting"
+      ],
+      "gaji": "Rp 5.500.000 - Rp 7.000.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-07-28",
+      "postedDate": "2025-06-16"
+    },
+    {
+      "id": 8,
+      "namaPekerjaan": "IT Support",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. TB Simatupang No. 234, Jakarta Selatan",
+      "deskripsiPekerjaan": "Memberikan dukungan teknis untuk hardware dan software, troubleshooting masalah IT, maintenance sistem komputer, dan instalasi perangkat. Memastikan seluruh sistem IT perusahaan berjalan dengan lancar.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal D3 Teknik Informatika/Sistem Informasi",
+        "Menguasai troubleshooting hardware dan software",
+        "Memahami jaringan komputer dasar",
+        "Dapat bekerja mobile untuk support ke berbagai lokasi",
+        "Pengalaman IT support minimal 1 tahun"
+      ],
+      "gaji": "Rp 5.000.000 - Rp 6.500.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-08-10",
+      "postedDate": "2025-06-22"
+    },
+    {
+      "id": 9,
+      "namaPekerjaan": "Human Resources Coordinator",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Casablanca No. 156, Jakarta Selatan",
+      "deskripsiPekerjaan": "Mengelola proses rekrutmen, administrasi karyawan, payroll, dan employee relations. Membantu dalam pengembangan kebijakan HR dan memastikan compliance dengan regulasi ketenagakerjaan yang berlaku.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal S1 Psikologi/Manajemen/Hukum",
+        "Memahami UU Ketenagakerjaan Indonesia",
+        "Menguasai sistem HRIS",
+        "Memiliki kemampuan interpersonal yang baik",
+        "Pengalaman HR minimal 2-3 tahun"
+      ],
+      "gaji": "Rp 6.500.000 - Rp 8.500.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-08-01",
+      "postedDate": "2025-06-19"
+    },
+    {
+      "id": 10,
+      "namaPekerjaan": "Content Writer",
+      "namaPerusahaan": "PT Dua Sisi Sejahtera",
+      "logoPerusahaan": "/logodss.png",
+      "alamatPerusahaan": "Jl. Senopati No. 89, Jakarta Selatan",
+      "deskripsiPekerjaan": "Membuat konten berkualitas untuk website, blog, social media, dan materi marketing lainnya. Melakukan riset topik, SEO writing, dan memastikan konten sesuai dengan tone of voice brand klien.",
+      "persyaratanKhusus": [
+        "Pendidikan minimal S1 Komunikasi/Sastra/Jurnalistik",
+        "Memiliki kemampuan writing yang excellent dalam Bahasa Indonesia dan Inggris",
+        "Memahami SEO dan digital marketing",
+        "Kreatif dan dapat menghasilkan ide konten yang fresh",
+        "Portfolio writing yang dapat dipertanggungjawabkan"
+      ],
+      "gaji": "Rp 5.500.000 - Rp 7.500.000",
+      "tipeKerja": "Full Time",
+      "lokasi": "Jakarta Selatan",
+      "deadline": "2025-08-15",
+      "postedDate": "2025-06-25"
+    }
+  ],
+
+  "pagination": {
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalJobs": 10,
+    "limit": 10
+  }
+}

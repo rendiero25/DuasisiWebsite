@@ -49,8 +49,8 @@ const TentangKami = () => {
                 </div>
 
                 <div className="absolute -z-20 w-full h-full flex flex-col">
-                    <div className="bg-primary size-75 3xl:size-95 rounded-full blur-[8rem] self-end "></div>
-                    <div className="bg-primary size-75 3xl:size-95 rounded-full blur-[7rem] self-start mt-[35rem] -ml-20"></div>
+                    <div className="bg-primary size-75 3xl:size-95 rounded-full blur-[10rem] self-end "></div>
+                    <div className="bg-primary size-75 3xl:size-95 rounded-full blur-[10rem] self-start mt-[35rem] -ml-20"></div>
                 </div>
             </div>
         </div>

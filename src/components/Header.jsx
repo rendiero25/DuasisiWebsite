@@ -73,7 +73,7 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                buttonClassName="hidden xl:flex xl:mr-20 3xl:mr-60 flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
                                 spanClassName="font-reguler text-black text-md 3xl:text-2xl"
                                 buttonName="Konsultasi Yuk!"
                                 circleClassName="bg-black rounded-full p-2 3xl:p-3"
