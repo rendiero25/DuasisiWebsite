@@ -8,8 +8,8 @@ const Footer = () => {
     return(
         <div className="bg-black px-6 xl:px-20 3xl:px-60 pt-10 pb-6">
             <div className="flex flex-col justify-between items-center gap-12 py-5">
-                <div className="flex flex-col xl:flex-row justify-between items-end gap-10 w-full">
-                    <div className="flex flex-col justify-between items-start gap-6">
+                <div className="flex flex-col xl:flex-row justify-between items-center xl:items-end gap-10 w-full">
+                    <div className="flex flex-col justify-between items-center xl:items-start gap-6">
                         <h2 className="text-white font-medium text-3xl xl:text-6xl 3xl:text-7xl text-center xl:text-left">Outsourcing atau jasa <br/> penyaluran tenaga kerja</h2>
                         <ul className="flex flex-wrap justify-center xl:justify-start items-center gap-4 text-white font-reguler text-sm 3xl:text-lg xl:max-w-md">
                             <li>Beranda</li>

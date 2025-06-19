@@ -87,8 +87,6 @@ const Index = () => {
                 </div>
             </div>
 
-
-
             {/*SECTION 2*/}
             <div className="-mt-10 pt-10 pb-[3rem]">
                 <div className="px-6 xl:px-20 3xl:px-60 pt-25 3xl:pt-35 relative flex flex-col justify-between items-center bg-primary">

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Footer from "./components/Footer.jsx";
 import Index from "./pages/index.jsx";
 import TentangKami from "./pages/TentangKami.jsx";
+import Layanan from "./pages/Layanan.jsx";
 
 const App = () => {
     return(
@@ -14,6 +15,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Index />} />
                     <Route path="/tentang-kami" element={<TentangKami />} />
+                    <Route path="/layanan" element={<Layanan />} />
                 </Routes>
 
                 <Footer />

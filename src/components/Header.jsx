@@ -1,5 +1,5 @@
 import {useState} from "react";
-import {useNavigate} from "react-router-dom";
+import {useNavigate, useLocation} from "react-router-dom";
 
 import Button from "./Button.jsx";
 
@@ -15,24 +15,131 @@ const Header = ({ headerWidth }) => {
     const IsNotActiveMobileMenu = () => {setShowMobileMenu(false)};
 
     const navigate = useNavigate();
+    const location = useLocation();
+
+    const visibleRoutes = ["/tentang-kami", "/layanan", "/lowongan", "/kontak-kami"]
+    const isButtonVisible = visibleRoutes.includes(location.pathname);
+
+    const visibleRoutesForAll = ["/", "/tentang-kami", "/lowongan", "/kontak-kami"]
+    const isHeaderForAll = visibleRoutesForAll.includes(location.pathname);
+
+    const visibleRouteWhite = ["/layanan"];
+    const isHeaderVisibleWhite = visibleRouteWhite.includes(location.pathname);
 
     return(
         <div className={headerWidth}>
-            <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
-                <div className="flex flex-row justify-between items-center pt-4">
-                    <img src={Logo} alt="logo-dss" className="w-35 3xl:w-45" onClick={() => navigate("/")} />
+            {isHeaderForAll && (
+                <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
+                    <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
+                        <img
+                            src={Logo}
+                            alt="logo-dss"
+                            className="w-35 3xl:w-45"
+                            onClick={() => navigate("/")} />
 
-                    <ul className="hidden xl:flex flex-row gap-4 xl:gap-8 text-md xl:text-xl 3xl:mr-5">
-                        <li onClick={() => navigate("/")}>Beranda</li>
-                        <li onClick={() => navigate("/tentang-kami")}>Tentang Kami</li>
-                        <li onClick={() => navigate("/layanan")}>Layanan</li>
-                        <li onClick={() => navigate("/lowongan")}>Lowongan</li>
-                        <li onClick={() => navigate("/kontak-kami")}>Kontak Kami</li>
-                    </ul>
+                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:mr-5">
+                            <li
+                                onClick={() => navigate("/")}
+                                className={`${location.pathname === "/" ? "font-bold" : ""} cursor-pointer`}
+                            >Beranda
+                            </li>
 
-                    <MdMenu className="size-8 xl:hidden" onClick={isActiveMobileMenu}/>
+                            <li
+                                onClick={() => navigate("/tentang-kami")}
+                                className={`${location.pathname === "/tentang-kami" ? "font-bold" : ""} cursor-pointer`}
+                            >Tentang Kami
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/layanan")}
+                                className={`${location.pathname === "/layanan" ? "font-bold" : ""} cursor-pointer`}
+                            >Layanan
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/lowongan")}
+                                className={`${location.pathname === "/lowongan" ? "font-bold" : ""} cursor-pointer`}
+                            >Lowongan
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/kontak-kami")}
+                                className={`${location.pathname === "/kontak-kami" ? "font-bold" : ""} cursor-pointer`}
+                            >Kontak Kami
+                            </li>
+                        </ul>
+
+                        <MdMenu className="size-8 xl:hidden" onClick={isActiveMobileMenu}/>
+
+                        {isButtonVisible && (
+                            <Button
+                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                spanClassName="font-reguler text-black text-md 3xl:text-2xl"
+                                buttonName="Konsultasi Yuk!"
+                                circleClassName="bg-black rounded-full p-2 3xl:p-3"
+                                arrowClassName="size-4 text-button"
+                            />
+                        )}
+                    </div>
                 </div>
-            </div>
+            )}
+
+            {/*HEADER FOR LAYANAN PAGE*/}
+            {isHeaderVisibleWhite && (
+                <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
+                    <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
+                        <img
+                            src={LogoWhite}
+                            alt="logowhite-dss"
+                            className="w-35 3xl:w-45"
+                            onClick={() => navigate("/")} />
+
+                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:mr-5 text-white">
+                            <li
+                                onClick={() => navigate("/")}
+                                className={`${location.pathname === "/" ? "font-bold" : ""} cursor-pointer`}
+                            >Beranda
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/tentang-kami")}
+                                className={`${location.pathname === "/tentang-kami" ? "font-bold" : ""} cursor-pointer`}
+                            >Tentang Kami
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/layanan")}
+                                className={`${location.pathname === "/layanan" ? "font-bold" : ""} cursor-pointer`}
+                            >Layanan
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/lowongan")}
+                                className={`${location.pathname === "/lowongan" ? "font-bold" : ""} cursor-pointer`}
+                            >Lowongan
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/kontak-kami")}
+                                className={`${location.pathname === "/kontak-kami" ? "font-bold" : ""} cursor-pointer`}
+                            >Kontak Kami
+                            </li>
+                        </ul>
+
+                        <MdMenu className="size-8 xl:hidden text-white" onClick={isActiveMobileMenu}/>
+
+                        {isButtonVisible && (
+                            <Button
+                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                spanClassName="font-reguler text-black text-md 3xl:text-2xl"
+                                buttonName="Konsultasi Yuk!"
+                                circleClassName="bg-black rounded-full p-2 3xl:p-3"
+                                arrowClassName="size-4 text-button"
+                            />
+                        )}
+                    </div>
+                </div>
+            )}
 
             {showmobilemenu && (
                 <div className="xl:hidden absolute z-20 top-0 bg-black flex flex-col gap-4 justify-between items-start px-6 py-10 w-full h-screen">
