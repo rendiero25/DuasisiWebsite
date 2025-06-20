@@ -27,6 +27,14 @@ const Header = ({ headerWidth }) => {
 
     const isHeaderVisibleWhite = visibleRouteWhite.includes(location.pathname);
 
+    const handleKonsultasi = () => {
+        const subject = "Perlu konsultasi dengan Duasisi";
+        const body = `Halo, Saya "nama kamu" dari Perusahaan "nama perusahaan kamu". Mohon informasi lebih lanjut mengenai proses di Dua Sisi. Terima kasih.`;
+
+        const mailtoLink = `mailto:workspace.rendy@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(mailtoLink);
+    };
+
     return(
         <div className={headerWidth}>
             {isHeaderForAll && (
@@ -35,7 +43,7 @@ const Header = ({ headerWidth }) => {
                         <img
                             src={Logo}
                             alt="logo-dss"
-                            className="w-35 3xl:w-45"
+                            className="w-35 3xl:w-45 cursor-pointer"
                             onClick={() => navigate("/")} />
 
                         <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:text-xl">
@@ -74,11 +82,12 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex xl:mr-20 3xl:mr-60 flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
-                                spanClassName="font-reguler text-black text-md 3xl:text-2xl"
+                                buttonClassName="hidden xl:flex xl:mr-20 3xl:mr-60 flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-xl"
                                 buttonName="Konsultasi Yuk!"
-                                circleClassName="bg-black rounded-full p-2 3xl:p-3"
-                                arrowClassName="size-4 text-button"
+                                circleClassName="bg-black group-hover:bg-white rounded-full p-2 3xl:p-3"
+                                arrowClassName="size-4 text-button group-hover:text-black"
+                                functionButton={handleKonsultasi}
                             />
                         )}
                     </div>
@@ -92,7 +101,7 @@ const Header = ({ headerWidth }) => {
                         <img
                             src={LogoWhite}
                             alt="logowhite-dss"
-                            className="w-35 3xl:w-45"
+                            className="w-35 3xl:w-45 cursor-pointer"
                             onClick={() => navigate("/")} />
 
                         <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:mr-5 text-white">
@@ -131,11 +140,12 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
-                                spanClassName="font-reguler text-black text-md 3xl:text-2xl"
+                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button cursor-pointer group hover:bg-white py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                spanClassName="font-reguler text-black text-md 3xl:text-xl"
                                 buttonName="Konsultasi Yuk!"
                                 circleClassName="bg-black rounded-full p-2 3xl:p-3"
-                                arrowClassName="size-4 text-button"
+                                arrowClassName="size-4 text-button group-hover:text-white"
+                                functionButton={handleKonsultasi}
                             />
                         )}
                     </div>
@@ -160,9 +170,10 @@ const Header = ({ headerWidth }) => {
                     <Button
                         buttonClassName="flex flex-row justify-center items-center gap-4 bg-button py-2 pl-6 pr-2 rounded-full"
                         spanClassName="font-semibold text-black text-2xl"
-                        buttonName="Outsourcing"
+                        buttonName="Outsourcer"
                         circleClassName="bg-black rounded-full p-4"
                         arrowClassName="size-6 text-button"
+                        functionButton={() => navigate("/tentang-kami")}
                     />
                 </div>
             )}

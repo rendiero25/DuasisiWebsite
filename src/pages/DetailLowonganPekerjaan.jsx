@@ -65,7 +65,7 @@ const DetailLowonganPekerjaan = () => {
                         <h2 className="text-2xl font-bold text-gray-800 mb-4">Pekerjaan tidak ditemukan</h2>
                         <button
                             onClick={() => navigate('/lowongan')}
-                            className="hidden xl:flex text-black px-6 py-3 rounded-lg hover:bg-primary transition-colors"
+                            className="hidden cursor-pointer xl:flex text-black px-6 py-3 rounded-lg hover:bg-primary transition-colors"
                         >
                             Kembali ke Lowongan
                         </button>
@@ -86,14 +86,14 @@ const DetailLowonganPekerjaan = () => {
                     <div className="hidden xl:flex justify-center self-start">
                         <button
                             onClick={() => navigate('/lowongan')}
-                            className="text-black font-semibold hover:bg-primary py-3 px-6 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                            className="text-black cursor-pointer font-semibold hover:bg-primary py-3 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
                         >
                             ← &nbsp; Kembali ke Lowongan
                         </button>
                     </div>
 
                     {/* Div Pertama - Info Perusahaan */}
-                    <div className="p-8">
+                    <div className="py-8">
                         <div className="flex flex-col xl:flex-row justify-between items-end gap-6 w-full">
                             <div className="flex flex-col justify-between items-start gap-6">
                                 <img
@@ -115,14 +115,14 @@ const DetailLowonganPekerjaan = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full flex justify-end">
+                            <div className="w-full flex justify-start xl:justify-end">
                                 <Button
-                                    buttonClassName="flex flex-row justify-center items-center gap-4 bg-primary py-1 pl-4 xl:pl-6 3xl:pl-6 pr-1 rounded-full w-fit self-end"
-                                    spanClassName="font-bold text-black text-md 3xl:text-2xl"
+                                    buttonClassName="flex flex-row justify-center items-center cursor-pointer gap-4 bg-primary py-1 pl-4 xl:pl-6 3xl:pl-6 pr-1 rounded-full w-fit self-end group hover:bg-black"
+                                    spanClassName="font-medium text-black group-hover:text-white text-md 3xl:text-xl"
                                     buttonName="Kirim Lamaran"
-                                    circleClassName="bg-black rounded-full p-3 xl:p-4"
-                                    arrowClassName="size-4 text-primary"
-                                    functionButton={() => handleKirimLamaran}
+                                    circleClassName="bg-black group-hover:bg-white rounded-full p-3"
+                                    arrowClassName="size-4 text-primary group-hover:text-black"
+                                    functionButton={handleKirimLamaran}
                                 />
                             </div>
                         </div>
@@ -150,23 +150,23 @@ const DetailLowonganPekerjaan = () => {
                                 </h4>
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">💰 Gaji:</span>
+                                        <span className="font-semibold text-gray-600">Gaji:</span>
                                         <span className="text-black font-medium">{jobDetail.gaji}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">💼 Tipe Kerja:</span>
+                                        <span className="font-semibold text-gray-600">Tipe Kerja:</span>
                                         <span className="text-black font-medium">{jobDetail.tipeKerja}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">📍 Lokasi:</span>
+                                        <span className="font-semibold text-gray-600">Lokasi:</span>
                                         <span className="text-black font-medium">{jobDetail.lokasi}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">⏰ Deadline:</span>
+                                        <span className="font-semibold text-gray-600">Deadline:</span>
                                         <span className="text-black font-medium">{jobDetail.deadline}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">📅 Posted:</span>
+                                        <span className="font-semibold text-gray-600">Posted:</span>
                                         <span className="text-black font-medium">{jobDetail.postedDate}</span>
                                     </div>
                                 </div>

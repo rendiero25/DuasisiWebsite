@@ -1,8 +1,8 @@
 import {FaArrowRight} from "react-icons/fa6";
 
-const Button = ({buttonClassName, spanClassName, circleClassName, arrowClassName, buttonName, fuctionButton}) => {
+const Button = ({buttonClassName, spanClassName, circleClassName, arrowClassName, buttonName, functionButton}) => {
     return(
-        <button className={buttonClassName} onClick={fuctionButton}>
+        <button className={buttonClassName} onClick={functionButton}>
             <span className={spanClassName}>{buttonName}</span>
 
             <div className={circleClassName}>

@@ -64,7 +64,7 @@ const Layanan = () => {
                             mainClassName="bg-primary flex flex-col xl:flex-row justify-center items-center gap-8 3xl:gap-12 py-10 xl:py-20 3xl:py-30"
                             bannerCTAwords="Tertarik? Langsung Hubungi Kami"
                             bannerCTAwordsClassName="font-reguler text-white text-4xl xl:text-5xl 3xl:text-7xl text-center"
-                            buttonClassName="flex flex-row justify-center items-center gap-4 bg-black py-1 3xl:py-2 pl-4 3xl:pl-6 pr-1 3xl:pr-2 rounded-full w-fit self-center xl:self-end"
+                            buttonClassName="hover:shadow-2xl cursor-pointer flex flex-row justify-center items-center gap-4 bg-black py-1 3xl:py-2 pl-4 3xl:pl-6 pr-1 3xl:pr-2 rounded-full w-fit self-center xl:self-end"
                             circleClassName="bg-primary rounded-full p-3 3xl:p-4"
                             buttonName="Hubungi Kami"
                             spanClassName="font-reguler text-white text-md 3xl:text-2xl"

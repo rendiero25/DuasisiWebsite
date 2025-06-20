@@ -1,10 +1,21 @@
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 
+import { useInView } from "motion/react";
+import {useRef} from "react";
+
 import Header from "../components/Header.jsx";
 import Video from "../assets/tutorial.mp4";
+import PelatihanHRDImage from "../assets/imagepelatihanhrd.png";
+import {motion} from "motion/react";
 
 const Lowongan = () => {
+
+    const ref13 = useRef(null);
+    const ref14 = useRef(null);
+
+    const isInView13 = useInView(ref13, { once: true });
+    const isInView14 = useInView(ref14, { once: true });
 
     const [lowonganData, setLowonganData] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -66,9 +77,27 @@ const Lowongan = () => {
 
             <div className="px-6 py-10 xl:py-25 xl:px-20 3xl:px-60 flex flex-col justify-between items-center gap-8 xl:gap-12 3xl:gap-16">
                 <div className="flex flex-col justify-between items-center gap-10">
-                    <h2 className="font-semibold text-6xl sm:text-8xl text-black text-center">Dapatkan Pekerjaan Anda Bersama Kami</h2>
-                    <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">
-                        Temukan peluang terbaik, raih karier impian, dan mulai perjalanan suksesmu sekarang juga</p>
+                    <motion.h2
+                        ref={ref13}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: isInView13 ? 1 : 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                        id="animation"
+                        className="font-semibold text-6xl sm:text-8xl text-black text-center"
+                    >
+                        Dapatkan Pekerjaan Anda Bersama Kami
+                    </motion.h2>
+
+                    <motion.p
+                        ref={ref14}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: isInView14 ? 1 : 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                        id="animation"
+                        className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left"
+                    >
+                        Temukan peluang terbaik, raih karier impian, dan mulai perjalanan suksesmu sekarang juga
+                    </motion.p>
                 </div>
 
                 <div className="relative w-full">
@@ -211,7 +240,7 @@ const Lowongan = () => {
 
                                 {/* Tombol Lihat Detail */}
                                 <button
-                                    className="w-full bg-black hover:bg-gray-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                                    className="w-full cursor-pointer bg-black hover:bg-gray-800 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
                                     onClick={() => handleJobClick(job.id)}>
                                         Lihat Detail
                                 </button>

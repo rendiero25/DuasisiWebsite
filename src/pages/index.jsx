@@ -1,6 +1,10 @@
 import Button from "../components/Button.jsx";
 import Slider from "../components/Slider.jsx";
 
+import { motion, useInView } from 'motion/react';
+import { useRef } from 'react';
+import {useNavigate} from "react-router-dom";
+
 import Header from "../components/Header.jsx";
 import BannerCTA from "../components/BannerCTA.jsx";
 
@@ -28,6 +32,36 @@ import Person5 from "../assets/person5.jpg";
 
 
 const Index = () => {
+
+    const navigate = useNavigate();
+
+    const ref1 = useRef(null);
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
+    const ref5 = useRef(null);
+    const ref6 = useRef(null);
+    const ref7 = useRef(null);
+    const ref8 = useRef(null);
+
+    // useInView untuk mendeteksi kapan elemen masuk viewport
+    const isInView1 = useInView(ref1, { once: true });
+    const isInView2 = useInView(ref2, { once: true });
+    const isInView3 = useInView(ref3, { once: true });
+    const isInView4 = useInView(ref4, { once: true });
+    const isInView5 = useInView(ref5, { once: true });
+    const isInView6 = useInView(ref6, { once: true });
+    const isInView7 = useInView(ref7, { once: true });
+    const isInView8 = useInView(ref8, { once: true });
+
+    const handleKonsultasiButton = () => {
+        const subject1 = "Perlu konsultasi dengan Duasisi";
+        const body1 = `Halo, Saya "nama kamu" dari Perusahaan "nama perusahaan kamu". Mohon informasi lebih lanjut mengenai proses di Dua Sisi. Terima kasih.`;
+
+        const mailtoLink1 = `mailto:workspace.rendy@gmail.com?subject=${encodeURIComponent(subject1)}&body=${encodeURIComponent(body1)}`;
+        window.open(mailtoLink1);
+    };
+
     return(
         <div className="">
             <div className="min-h-screen flex flex-col xl:flex-row">
@@ -37,10 +71,20 @@ const Index = () => {
                     {/*HERO*/}
                     <div className="pt-10 xl:pt-14 flex flex-col xl:flex-row justify-between items-center xl:relative">
                         <div className="flex flex-col xl:flex-row justify-center items-center gap-10">
-                            <div className="px-6 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-18 3xl:pt-30">
+                            <div className="px-6 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-18 3xl:pt-10">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2">
                                     <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi adalah Partner Anda di dalam outsourcing</h2>
-                                    <h1 className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-black text-center xl:text-left">sumber daya manusia</h1>
+
+                                    <motion.h1
+                                        initial={{ opacity: 0, scale: 2 }}
+                                        whileInView={{ opacity: 1, scale: 1 }}
+                                        viewport={{ once: true, amount: 0.5 }}
+                                        transition={{ duration: 0.3, scale: { type: 'spring', bounce: 0.1 } }}
+                                        className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-black text-center xl:text-left"
+                                    >
+                                        sumber daya manusia
+                                    </motion.h1>
+
                                     <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
                                         Dari arti dua pihak atau dua sisi, kami merasa HRD adalah
                                         bagian integral di perusahaan yang harus mementingkan dan
@@ -49,14 +93,15 @@ const Index = () => {
 
                                 <div className="flex flex-row justify-between items-center gap-6 xl:gap-10 xl:mt-5">
                                     <Button
-                                        buttonClassName="flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full"
-                                        spanClassName="font-reguler text-black text-md 3xl:text-2xl"
-                                        buttonName="Outsourcing"
+                                        buttonClassName="flex flex-row justify-center items-center gap-4 cursor-pointer bg-button group hover:bg-black hover:shadow-2xl py-1 pl-4 3xl:pl-6 pr-1 rounded-full"
+                                        spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-2xl"
+                                        buttonName="Outsourcer"
                                         circleClassName="bg-black rounded-full p-3 xl:p-5"
-                                        arrowClassName="size-4 3xl:size-6 text-button"
+                                        arrowClassName="size-4 3xl:size-6 text-button group-hover:text-white"
+                                        functionButton={() => navigate("/tentang-kami")}
                                     />
 
-                                    <a href="#" className="font-bold text-sm 3xl:text-xl text-black underline">Apa itu Outsourcing?</a>
+                                    <a href="/tentang-kami" className="font-bold text-sm 3xl:text-xl text-black underline">Apa itu Outsourcing?</a>
                                 </div>
                             </div>
                         </div>
@@ -69,11 +114,12 @@ const Index = () => {
 
                         <div className="absolute flex flex-col justify-between h-full px-8 xl:px-12 3xl:px-16 pb-8 3xl:pb-16 pt-8">
                             <Button
-                                buttonClassName="invisible xl:visible flex flex-row justify-center items-center gap-4 bg-button py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
-                                spanClassName="font-reguler text-black text-md 3xl:text-2xl"
+                                buttonClassName="invisible xl:visible cursor-pointer flex flex-row justify-center items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                spanClassName="font-reguler text-black text-md 3xl:text-xl group-hover:text-white"
                                 buttonName="Konsultasi Yuk!"
-                                circleClassName="bg-black rounded-full p-2 xl:p-3"
-                                arrowClassName="size-4 text-button"
+                                circleClassName="bg-black rounded-full p-2 xl:p-3 group-hover:bg-white"
+                                arrowClassName="size-4 text-button group-hover:text-black"
+                                functionButton={handleKonsultasiButton}
                             />
 
                             <p className="font-medium 3xl:font-light text-white text-sm sm:text-lg 3xl:text-2xl text-left leading-normal 3xl:pr-50">hampir semua kandidat yang kami
@@ -91,30 +137,72 @@ const Index = () => {
             <div className="-mt-10 pt-10 pb-[3rem]">
                 <div className="px-6 xl:px-20 3xl:px-60 pt-25 3xl:pt-35 relative flex flex-col justify-between items-center bg-primary">
                     <div className="flex flex-col justify-between items-center xl:items-start gap-8 xl:gap-16 pb-[10rem] xl:pb-[25rem] 3xl:pb-[35rem] w-full">
-                        <h2 className="font-semibold text-white text-3xl xl:text-6xl text-center xl:text-left 3xl:max-w-5xl">Mitra terpercaya lebih dari 10 tahun dalam berbagai industri</h2>
+                        <motion.h2
+                            ref={ref1}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: isInView1 ? 1 : 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            id="animation"
+                            className="font-semibold text-white text-3xl xl:text-6xl text-center xl:text-left 3xl:max-w-5xl"
+                        >
+                            Mitra terpercaya lebih dari 10 tahun dalam berbagai industri
+                        </motion.h2>
+
 
                         <div className="flex flex-col xl:flex-row justify-between items-center gap-8 xl:gap-12 w-full">
-                            <img src={Section2Image} alt="section2-image" className="xl:w-[27rem]"/>
+                            <motion.img
+                                ref={ref2}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: isInView2 ? 1 : 0 }}
+                                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                                src={Section2Image}
+                                alt="section2-image"
+                                id="animation"
+                                className="xl:w-[27rem]"
+                            />
 
                             <div className="flex flex-col justify-center items-center xl:items-start gap-10">
-                                <p className="text-white font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-lg 3xl:max-w-2xl">
+                                <motion.p
+                                    ref={ref3}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: isInView3 ? 1 : 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                                    id="animation"
+                                    className="text-white font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-lg 3xl:max-w-2xl"
+                                >
                                     Lebih dari 30+ perusahaan telah mempercayakan proses
                                     rekrutmen mereka kepada Dua Sisi. Dengan pendekatan
                                     yang cepat, akurat, dan human-centered, kami telah
                                     berhasil menyalurkan kandidat berkualitas tinggi dengan
                                     tingkat keberhasilan hingga 95%.
-                                </p>
+                                </motion.p>
+
 
                                 <div className="flex flex-row justify-center items-center gap-6 xl:gap-12">
-                                    <div className="flex flex-col justify-center items-center">
+                                    <motion.div
+                                        ref={ref4}
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: isInView4 ? 1 : 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+                                        id="animation"
+                                        className="flex flex-col justify-center items-center"
+                                    >
                                         <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">30+</h3>
                                         <h3 className="text-white font-reguler text-xs xl:text-sm 3xl:text-lg">Perusahaan sudah dibantu</h3>
-                                    </div>
+                                    </motion.div>
 
-                                    <div className="flex flex-col justify-center items-center">
+                                    <motion.div
+                                        ref={ref5}
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: isInView5 ? 1 : 0 }}
+                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
+                                        id="animation"
+                                        className="flex flex-col justify-center items-center"
+                                    >
                                         <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">95%</h3>
                                         <h3 className="text-white font-reguler text-xs xl:text-sm 3xl:text-lg">Kandidat diterima</h3>
-                                    </div>
+                                    </motion.div>
+
                                 </div>
                             </div>
 
@@ -144,18 +232,42 @@ const Index = () => {
             <div className="px-6 xl:px-20 3xl:px-60 pt-10 3xl:pt-25">
                 <div className="flex flex-col justify-between items-center gap-8">
                     <div className="flex flex-col justify-between items-center gap-6">
-                        <h2 className="font-semibold text-black text-3xl xl:text-6xl text-center xl:text-left">Satu solusi, semua layanan HR</h2>
-                        <p className="text-black font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:max-w-4xl 3xl:max-w-7xl">
+                        <motion.h2
+                            ref={ref6}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: isInView6 ? 1 : 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+                            id="animation"
+                            className="font-semibold text-black text-3xl xl:text-6xl text-center xl:text-left"
+                        >
+                            Satu solusi, semua layanan HR
+                        </motion.h2>
+
+                        <motion.p
+                            ref={ref7}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: isInView7 ? 1 : 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                            id="animation"
+                            className="text-black font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:max-w-4xl 3xl:max-w-7xl"
+                        >
                             Kami tidak hanya menyalurkan tenaga kerja, kami bantu kelola semuanya, dari awal hingga akhir.
                             Mulai dari pencarian kandidat terbaik, penjadwalan interview, hingga bimbingan HRD yang tepat sasaran. <br/><br/>
 
                             Setelah kandidat masuk kerja, kami juga mengurus administrasi seperti invoice bulanan, pendaftaran BPJS,
                             hingga pelacakan cuti dan izin sakit. Semua dirancang untuk memudahkan operasional perusahaan Anda,
                             agar bisa fokus pada pertumbuhan bisnis.
-                        </p>
+                        </motion.p>
                     </div>
 
-                    <div className="flex flex-col justify-between items-center pt-10 w-full">
+                    <motion.div
+                        ref={ref8}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: isInView8 ? 1 : 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                        id="animation"
+                        className="flex flex-col justify-between items-center pt-10 w-full"
+                    >
                         <div className="flex flex-col xl:flex-wrap justify-between items-center xl:items-start gap-12 3xl:gap-20">
                             <div className="flex flex-col xl:flex-row justify-between items-start xl:gap-16 3xl:gap-50">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-70">
@@ -222,7 +334,7 @@ const Index = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 
@@ -266,7 +378,7 @@ const Index = () => {
                     mainClassName="bg-primary flex flex-col xl:flex-row justify-center items-center gap-8 3xl:gap-12 py-10 xl:py-20 3xl:py-30"
                     bannerCTAwords="Tertarik? Langsung Hubungi Kami"
                     bannerCTAwordsClassName="font-reguler text-white text-4xl xl:text-5xl 3xl:text-7xl text-center"
-                    buttonClassName="flex flex-row justify-center items-center gap-4 bg-black py-1 3xl:py-2 pl-4 3xl:pl-6 pr-1 3xl:pr-2 rounded-full w-fit self-center xl:self-end"
+                    buttonClassName="hover:shadow-2xl cursor-pointer flex flex-row justify-center items-center gap-4 bg-black py-1 3xl:py-2 pl-4 3xl:pl-6 pr-1 3xl:pr-2 rounded-full w-fit self-center xl:self-end"
                     circleClassName="bg-primary rounded-full p-3 3xl:p-4"
                     buttonName="Hubungi Kami"
                     spanClassName="font-reguler text-white text-md 3xl:text-2xl"

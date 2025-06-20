@@ -16,6 +16,7 @@ const Slider = ({
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 pagination={{clickable: true}}
+                autoplay={{delay: 3000}}
                 spaceBetween={30}
                 slidesPerView={1}
                 breakpoints={{
