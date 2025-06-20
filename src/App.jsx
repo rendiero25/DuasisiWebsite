@@ -7,6 +7,7 @@ import Index from "./pages/index.jsx";
 import TentangKami from "./pages/TentangKami.jsx";
 import Layanan from "./pages/Layanan.jsx";
 import Lowongan from "./pages/Lowongan.jsx";
+import DetailLowonganPekerjaan from "./pages/DetailLowonganPekerjaan.jsx";
 import KontakKami from "./pages/KontakKami.jsx";
 
 const App = () => {
@@ -19,7 +20,7 @@ const App = () => {
                     <Route path="/tentang-kami" element={<TentangKami />} />
                     <Route path="/layanan" element={<Layanan />} />
                     <Route path="/lowongan" element={<Lowongan />} />
-                    <Route path="/lowongan/:detailpekerjaan/:id" element={<Lowongan />} />
+                    <Route path="/lowongan/detail-lowongan/:id" element={<DetailLowonganPekerjaan />} />
                     <Route path="/kontak-kami" element={<KontakKami />} />
                 </Routes>
 

@@ -18,12 +18,13 @@ const Header = ({ headerWidth }) => {
     const location = useLocation();
 
     const visibleRoutes = ["/tentang-kami", "/layanan", "/lowongan", "/kontak-kami"]
-    const isButtonVisible = visibleRoutes.includes(location.pathname);
+    const isButtonVisible = visibleRoutes.includes(location.pathname) || location.pathname.startsWith("/lowongan/detail-lowongan/");
 
     const visibleRoutesForAll = ["/", "/tentang-kami", "/lowongan", "/kontak-kami"]
-    const isHeaderForAll = visibleRoutesForAll.includes(location.pathname);
+    const isHeaderForAll = visibleRoutesForAll.includes(location.pathname) || location.pathname.startsWith("/lowongan/detail-lowongan/");
 
     const visibleRouteWhite = ["/layanan"];
+
     const isHeaderVisibleWhite = visibleRouteWhite.includes(location.pathname);
 
     return(
@@ -37,7 +38,7 @@ const Header = ({ headerWidth }) => {
                             className="w-35 3xl:w-45"
                             onClick={() => navigate("/")} />
 
-                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:mr-5">
+                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:text-xl">
                             <li
                                 onClick={() => navigate("/")}
                                 className={`${location.pathname === "/" ? "font-bold" : ""} cursor-pointer`}
@@ -58,8 +59,8 @@ const Header = ({ headerWidth }) => {
 
                             <li
                                 onClick={() => navigate("/lowongan")}
-                                className={`${location.pathname === "/lowongan" ? "font-bold" : ""} cursor-pointer`}
-                            >Lowongan
+                                className={`${location.pathname === "/lowongan" || location.pathname.startsWith("/lowongan/detail-lowongan/") ? "font-bold" : ""} cursor-pointer`}
+                                    >Lowongan
                             </li>
 
                             <li
