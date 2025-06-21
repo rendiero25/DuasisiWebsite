@@ -58,7 +58,7 @@ const Index = () => {
         const subject1 = "Perlu konsultasi dengan Duasisi";
         const body1 = `Halo, Saya "nama kamu" dari Perusahaan "nama perusahaan kamu". Mohon informasi lebih lanjut mengenai proses di Dua Sisi. Terima kasih.`;
 
-        const mailtoLink1 = `mailto:workspace.rendy@gmail.com?subject=${encodeURIComponent(subject1)}&body=${encodeURIComponent(body1)}`;
+        const mailtoLink1 = `mailto:hrd.recruitment@duasisi.id?subject=${encodeURIComponent(subject1)}&body=${encodeURIComponent(body1)}`;
         window.open(mailtoLink1);
     };
 
@@ -80,9 +80,9 @@ const Index = () => {
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true, amount: 0.5 }}
                                         transition={{ duration: 0.3, scale: { type: 'spring', bounce: 0.1 } }}
-                                        className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-black text-center xl:text-left"
+                                        className="w-full font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-black text-center xl:text-left"
                                     >
-                                        sumber daya manusia
+                                        Sumber Daya Manusia
                                     </motion.h1>
 
                                     <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
@@ -108,7 +108,7 @@ const Index = () => {
                     </div>
                 </div>
 
-                <div className="pt-10 xl:pt-0 xl:w-[85rem] 3xl:w-[100rem] h-auto">
+                <div className="pt-10 xl:pt-0 xl:w-[85rem] 3xl:w-[94rem] h-auto">
                     <div className="relative flex flex-col justify-end items-center h-full">
                         <img src={OfficeActivity} alt="office-activity" className="w-full h-full object-cover"/>
 
@@ -122,9 +122,9 @@ const Index = () => {
                                 functionButton={handleKonsultasiButton}
                             />
 
-                            <p className="font-medium 3xl:font-light text-white text-sm sm:text-lg 3xl:text-2xl text-left leading-normal 3xl:pr-50">hampir semua kandidat yang kami
+                            <p className="font-medium 3xl:font-light text-white text-sm sm:text-lg 3xl:text-2xl text-left leading-normal 3xl:pr-50">Hampir semua kandidat yang kami
                                 rekomendasikan langsung diterima bekerja.
-                                Ini bukan sekadar angka—ini bukti nyata
+                                Ini bukan sekadar angka, ini bukti nyata
                                 bahwa kami paham apa yang dibutuhkan
                                 perusahaan dan apa yang dicari para
                                 pencari kerja.</p>
@@ -154,7 +154,7 @@ const Index = () => {
                                 ref={ref2}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: isInView2 ? 1 : 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                                 src={Section2Image}
                                 alt="section2-image"
                                 id="animation"
@@ -166,7 +166,7 @@ const Index = () => {
                                     ref={ref3}
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: isInView3 ? 1 : 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
                                     id="animation"
                                     className="text-white font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-lg 3xl:max-w-2xl"
                                 >
@@ -183,7 +183,7 @@ const Index = () => {
                                         ref={ref4}
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: isInView4 ? 1 : 0 }}
-                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
                                         id="animation"
                                         className="flex flex-col justify-center items-center"
                                     >
@@ -195,7 +195,7 @@ const Index = () => {
                                         ref={ref5}
                                         initial={{ opacity: 0 }}
                                         animate={{ opacity: isInView5 ? 1 : 0 }}
-                                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
+                                        transition={{ duration: 0.8, ease: "easeOut", delay: 1.0 }}
                                         id="animation"
                                         className="flex flex-col justify-center items-center"
                                     >
@@ -218,7 +218,7 @@ const Index = () => {
                             direction={"horizontal"}
                             pagination={{clickable: true}}
                             modules={[Pagination, Autoplay]}
-                            autoplay={{delay: 3000}}
+                            autoplay={{delay: 5000}}
                             className="mySwiper w-full">
                                 <SwiperSlide><img src={Rekrut} alt="rekrut-slideshow1" className="w-full h-auto object-cover rounded-2xl xl:rounded-4xl"/></SwiperSlide>
                                 <SwiperSlide><img src={Konsultasi} alt="rekrut-slideshow2" className="w-full h-auto object-cover rounded-2xl xl:rounded-4xl"/></SwiperSlide>
@@ -236,7 +236,7 @@ const Index = () => {
                             ref={ref6}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: isInView6 ? 1 : 0 }}
-                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
+                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                             id="animation"
                             className="font-semibold text-black text-3xl xl:text-6xl text-center xl:text-left"
                         >
@@ -247,7 +247,7 @@ const Index = () => {
                             ref={ref7}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: isInView7 ? 1 : 0 }}
-                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                            transition={{ duration: 0.8, ease: "easeOut", delay: 0.6}}
                             id="animation"
                             className="text-black font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:max-w-4xl 3xl:max-w-7xl"
                         >
@@ -264,7 +264,7 @@ const Index = () => {
                         ref={ref8}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: isInView8 ? 1 : 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
                         id="animation"
                         className="flex flex-col justify-between items-center pt-10 w-full"
                     >
@@ -285,7 +285,7 @@ const Index = () => {
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
                                         <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl ">Pendaftaran BPJS</h3>
                                         <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-xs">
-                                            Melakukan pendaftaran dan pembayaran untuk semua karyawan kontrak anda
+                                            Melakukan pendaftaran dan pembayaran untuk semua karyawan kontrak Anda
                                         </p>
                                     </div>
                                 </div>

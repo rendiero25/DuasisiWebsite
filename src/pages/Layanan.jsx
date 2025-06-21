@@ -39,10 +39,10 @@ const Layanan = () => {
                                         <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left">Layanan Kami</h2>
                                         <h1 className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-white text-center xl:text-left">Rekrut</h1>
                                         <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left 3xl:max-w-4xl">
-                                            Kami meringankan beban departemen HRD anda. Dengan database kami yang berkembang kami mempunyai
-                                            simpanan data pelamar kerja yang akan disesuaikan dengan kebutuhan anda. Mulai dari tahap
-                                            pendidikkan, kelamin, pengalaman kerja serta usia yang anda butuhkan HRD team kami akan menyortir
-                                            dan menginterview mereka terlebih dahulu sebelum interview tahap terakhir di tempat anda.</p>
+                                            Kami meringankan beban departemen HRD Anda. Dengan database kami yang berkembang kami mempunyai
+                                            simpanan data pelamar kerja yang akan disesuaikan dengan kebutuhan Anda. Mulai dari tahap
+                                            pendidikkan, jenis kelamin, pengalaman kerja serta usia yang Anda butuhkan. HRD team kami akan menyortir
+                                            dan menginterview mereka terlebih dahulu sebelum interview tahap terakhir di tempat Anda.</p>
                                     </div>
                                 </SwiperSlide>
 
@@ -51,8 +51,8 @@ const Layanan = () => {
                                         <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left">Layanan Kami</h2>
                                         <h1 className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-white text-center xl:text-left">Benefit Outsourcing</h1>
                                         <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left 3xl:max-w-4xl">
-                                            Sibuk dan Pusing dengan posisi turnover tinggi ? Atau menghitung lembur serta denda dan komisi?
-                                            Dengan outsourcing anda sebagai perusahaan telah membantu beban pikiran besar yaitu tenaga kerja.
+                                            Sibuk dan pusing dengan posisi turnover tinggi ? Atau menghitung lembur serta denda dan komisi?
+                                            Dengan outsourcing Anda sebagai perusahaan telah membantu beban pikiran besar yaitu tenaga kerja.
                                             Dengan outsourcing kita bisa menangani rekrut sampai pengajian.</p>
                                     </div>
                                 </SwiperSlide>

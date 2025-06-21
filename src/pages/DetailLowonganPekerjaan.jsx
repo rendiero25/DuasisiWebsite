@@ -9,6 +9,23 @@ const DetailLowonganPekerjaan = () => {
     const [jobDetail, setJobDetail] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const [showModal, setShowModal] = useState(false);
+    const [formData, setFormData] = useState({
+        nama: '',
+        umur: '',
+        pendidikanTerakhir: '',
+        relevantExperience: '',
+        cv: null
+    });
+
+    const pendidikanOptions = [
+        'SMA/SMK',
+        'D3 (Diploma)',
+        'S1 (Sarjana)',
+        'S2 (Magister)',
+        'S3 (Doktor)'
+    ];
+
     useEffect(() => {
         const fetchJobDetail = async () => {
             try {
@@ -38,11 +55,69 @@ const DetailLowonganPekerjaan = () => {
     }, [id, navigate]);
 
     const handleKirimLamaran = () => {
-        const subject = `Lamaran Pekerjaan - ${jobDetail.namaPekerjaan}`;
-        const body = `Halo, Saya tertarik untuk melamar posisi ${jobDetail.namaPekerjaan} di ${jobDetail.namaPerusahaan}. Mohon informasi lebih lanjut mengenai proses seleksi. Terima kasih.`;
+        setShowModal(true);
+    };
 
-        const mailtoLink = `mailto:workspace.rendy@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const handleCloseModal = () => {
+        setShowModal(false);
+        setFormData({
+            nama: '',
+            umur: '',
+            pendidikanTerakhir: '',
+            relevantExperience: '',
+            cv: null
+        });
+    };
+
+    const handleInputChange = (e) => {
+        const { name, value, type, files } = e.target;
+        if (type === 'file') {
+            setFormData(prev => ({
+                ...prev,
+                [name]: files[0]
+            }));
+        } else {
+            setFormData(prev => ({
+                ...prev,
+                [name]: value
+            }));
+        }
+    };
+
+    const handleSubmitForm = (e) => {
+        e.preventDefault();
+
+        // Validasi form
+        if (!formData.nama || !formData.umur || !formData.pendidikanTerakhir || !formData.relevantExperience) {
+            alert('Mohon lengkapi semua field yang wajib diisi');
+            return;
+        }
+
+        // Di sini Anda bisa menambahkan logika untuk mengirim data ke server
+        console.log('Form data:', formData);
+
+        // Untuk sementara, kita tetap buka email seperti sebelumnya
+        const subject = `Lamaran Pekerjaan - ${jobDetail.namaPekerjaan}`;
+        const body = `Halo,
+
+            Saya tertarik untuk melamar posisi ${jobDetail.namaPekerjaan} di ${jobDetail.namaPerusahaan}.
+            
+            Detail Pelamar:
+            - Nama: ${formData.nama}
+            - Umur: ${formData.umur} tahun
+            - Pendidikan Terakhir: ${formData.pendidikanTerakhir}
+            - Pengalaman Relevan: ${formData.relevantExperience}
+            
+            Mohon informasi lebih lanjut mengenai proses seleksi.
+            
+            Terima kasih.`;
+
+        const mailtoLink = `mailto:hrd.recruitment@duasisi.id?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.open(mailtoLink);
+
+        // Tutup modal setelah submit
+        handleCloseModal();
+        // alert('Lamaran berhasil dikirim!');
     };
 
     if (loading) {
@@ -210,6 +285,130 @@ const DetailLowonganPekerjaan = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Modal Form Lamaran */}
+            {showModal && (
+                <div className="fixed inset-0 bg-black/90 bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                        <div className="p-6">
+                            <div className="flex justify-between items-center mb-6">
+                                <h3 className="text-2xl font-bold text-gray-800">Form Lamaran Pekerjaan</h3>
+                                <button
+                                    onClick={handleCloseModal}
+                                    className="text-gray-400 hover:text-gray-600 text-2xl font-bold"
+                                >
+                                    ×
+                                </button>
+                            </div>
+
+                            <form onSubmit={handleSubmitForm} className="space-y-6">
+                                {/* Nama */}
+                                <div>
+                                    <label htmlFor="nama" className="block text-sm font-medium text-gray-700 mb-2">
+                                        Nama Lengkap *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="nama"
+                                        name="nama"
+                                        value={formData.nama}
+                                        onChange={handleInputChange}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                        placeholder="Masukkan nama lengkap"
+                                        required
+                                    />
+                                </div>
+
+                                {/* Umur */}
+                                <div>
+                                    <label htmlFor="umur" className="block text-sm font-medium text-gray-700 mb-2">
+                                        Umur *
+                                    </label>
+                                    <input
+                                        type="number"
+                                        id="umur"
+                                        name="umur"
+                                        value={formData.umur}
+                                        onChange={handleInputChange}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                        placeholder="Masukkan umur"
+                                        min="17"
+                                        max="65"
+                                        required
+                                    />
+                                </div>
+
+                                {/* Pendidikan Terakhir */}
+                                <div>
+                                    <label htmlFor="pendidikanTerakhir" className="block text-sm font-medium text-gray-700 mb-2">
+                                        Pendidikan Terakhir *
+                                    </label>
+                                    <select
+                                        id="pendidikanTerakhir"
+                                        name="pendidikanTerakhir"
+                                        value={formData.pendidikanTerakhir}
+                                        onChange={handleInputChange}
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                        required
+                                    >
+                                        <option value="">Pilih Pendidikan Terakhir</option>
+                                        {pendidikanOptions.map((option, index) => (
+                                            <option key={index} value={option}>
+                                                {option}
+                                            </option>
+                                        ))}
+                                    </select>
+                                </div>
+
+                                {/* Relevant Experience */}
+                                <div>
+                                    <label htmlFor="relevantExperience" className="block text-sm font-medium text-gray-700 mb-2">
+                                        Pengalaman Relevan *
+                                    </label>
+                                    <textarea
+                                        id="relevantExperience"
+                                        name="relevantExperience"
+                                        value={formData.relevantExperience}
+                                        onChange={handleInputChange}
+                                        rows="4"
+                                        className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                        placeholder="Ceritakan pengalaman kerja yang relevan dengan posisi ini..."
+                                        required
+                                    />
+                                </div>
+
+                                {/* Upload CV */}
+                                <div>
+                                    <label htmlFor="cv" className="block text-sm font-medium text-gray-700 mb-2">
+                                        Upload file CV di aplikasi email
+                                    </label>
+
+                                    <p className="text-sm text-gray-500 mt-1">
+                                        Format yang didukung: PDF, DOC, DOCX (Max 5MB)
+                                    </p>
+                                </div>
+
+                                {/* Buttons */}
+                                <div className="flex gap-4 pt-4">
+                                    <button
+                                        type="button"
+                                        onClick={handleCloseModal}
+                                        className="cursor-pointer flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors"
+                                    >
+                                        Batal
+                                    </button>
+                                    <button
+                                        type="submit"
+                                        className="cursor-pointer flex-1 px-4 py-2 bg-primary text-black rounded-md hover:bg-opacity-80 transition-colors font-medium"
+                                    >
+                                        Kirim Lamaran
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };

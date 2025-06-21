@@ -42,10 +42,10 @@ const TentangKami = () => {
                             <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left">
                                 Outsourcing adalah Jasa Penyaluran Tenaga Kerja.
                                 Kita bisa merekrut karyawan sesuai permintaan
-                                anda sampai melakukan penghitungan gaji dan
+                                Anda sampai melakukan penghitungan gaji dan
                                 denda karyawan tersebut. Karyawan tersebut akan
                                 dianggap menjadi karyawan kontrak di perusahaan
-                                anda yang kami urus.
+                                Anda yang kami urus.
                             </p>
                         </motion.div>
                     </div>
@@ -90,7 +90,7 @@ const TentangKami = () => {
                             className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left"
                         >
                             Selain konsultasi kami juga bersedia melatih karyawan HRD
-                            anda untuk mengikuti standar prosedur kami. Ini akan
+                            Anda untuk mengikuti standar prosedur kami. Ini akan
                             menyangkut bagaimana menegur karyawan, memberikan
                             surat SP, membuat performance report, serta cara
                             interview 101.

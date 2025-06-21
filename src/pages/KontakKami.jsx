@@ -40,7 +40,7 @@ const KontakKami = () => {
             `Pesan:\n${formData.pesan}`
         );
 
-        const mailtoLink = `mailto:workspace.rendy@gmail.com?subject=${subject}&body=${body}`;
+        const mailtoLink = `mailto:hrd.recruitment@duasisi.id?subject=${subject}&body=${body}`;
         window.location.href = mailtoLink;
     };
 

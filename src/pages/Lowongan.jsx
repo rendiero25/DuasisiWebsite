@@ -173,9 +173,9 @@ const Lowongan = () => {
                     <div className="flex flex-col justify-between items-center xl:items-start gap-4 xl:max-w-xl">
                         <h3 className="font-semibold text-xl xl:text-5xl text-black">Tutorial Upload CV</h3>
                         <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">
-                            Jika anda kebingungan dalam mengupload/mengirim
-                            CV, silahkan anda menonton video ini terlebih dahulu
-                            agar mempermudahkan anda dalam mengirim CV. Happy Watching
+                            Jika Anda kebingungan dalam mengupload/mengirim
+                            CV, silahkan Anda menonton video ini terlebih dahulu
+                            agar mempermudahkan Anda dalam mengirim CV. Happy Watching!
                         </p>
                     </div>
                 </div>
@@ -246,11 +246,7 @@ const Lowongan = () => {
                                 </button>
                             </div>
                         ))
-
-
                     )}
-
-
                 </div>
 
                 {/* Jika tidak ada data */}
