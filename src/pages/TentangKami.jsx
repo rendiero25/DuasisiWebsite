@@ -5,7 +5,7 @@ import Employees from "../assets/employees2.jpg";
 import PelatihanHRDImage from "../assets/imagepelatihanhrd.png";
 
 import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 const TentangKami = () => {
 
@@ -18,6 +18,10 @@ const TentangKami = () => {
     const isInView10 = useInView(ref10, { once: true });
     const isInView11 = useInView(ref11, { once: true });
     const isInView12 = useInView(ref12, { once: true });
+
+    useEffect(() => {
+        document.title = "Tentang Kami | Duasisi Sejahtera";
+    }, [])
 
     return(
         <div className="flex flex-col justify-center items-center">

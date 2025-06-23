@@ -86,7 +86,7 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                buttonClassName="hidden xl:flex flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end transition duration-400 ease"
                                 spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-xl"
                                 buttonName="Konsultasi Yuk!"
                                 circleClassName="bg-black group-hover:bg-white rounded-full p-2 3xl:p-3"
@@ -144,11 +144,11 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
-                                spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-xl"
+                                buttonClassName="hidden xl:flex flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end transition duration-400 ease"
+                                spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-xl transition duration-400 ease"
                                 buttonName="Konsultasi Yuk!"
-                                circleClassName="bg-black group-hover:bg-white rounded-full p-2 3xl:p-3"
-                                arrowClassName="size-4 text-button group-hover:text-black"
+                                circleClassName="bg-black group-hover:bg-white rounded-full p-2 3xl:p-3 transition duration-400 ease"
+                                arrowClassName="size-4 text-button group-hover:text-black transition duration-400 ease"
                                 functionButton={handleKonsultasi}
                             />
                         )}
@@ -202,11 +202,11 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button cursor-pointer group hover:bg-white py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                buttonClassName="hidden xl:flex flex-row justify-center items-center gap-4 bg-button cursor-pointer group hover:bg-white py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end transition duration-400 ease"
                                 spanClassName="font-reguler text-black text-md 3xl:text-xl"
                                 buttonName="Konsultasi Yuk!"
                                 circleClassName="bg-black rounded-full p-2 3xl:p-3"
-                                arrowClassName="size-4 text-button group-hover:text-white"
+                                arrowClassName="size-4 text-button group-hover:text-white transition duration-400 ease"
                                 functionButton={handleKonsultasi}
                             />
                         )}
@@ -230,7 +230,7 @@ const Header = ({ headerWidth }) => {
                     </ul>
 
                     <Button
-                        buttonClassName="flex flex-row justify-center items-center gap-4 bg-button py-2 pl-6 pr-2 rounded-full"
+                        buttonClassName="flex flex-row justify-center items-center gap-4 bg-button py-2 pl-6 pr-2 rounded-full transition duration-400 ease"
                         spanClassName="font-semibold text-black text-2xl"
                         buttonName="Outsourcer"
                         circleClassName="bg-black rounded-full p-4"

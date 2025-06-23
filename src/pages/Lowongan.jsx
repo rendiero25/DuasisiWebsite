@@ -12,6 +12,10 @@ import {motion} from "motion/react";
 
 const Lowongan = () => {
 
+    useEffect(() => {
+        document.title = "Lowongan | Duasisi Sejahtera";
+    }, []);
+
     const ref13 = useRef(null);
     const ref14 = useRef(null);
 

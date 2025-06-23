@@ -2,7 +2,7 @@ import Button from "../components/Button.jsx";
 import Slider from "../components/Slider.jsx";
 
 import { motion, useInView } from 'motion/react';
-import { useRef } from 'react';
+import {useEffect, useRef} from 'react';
 import {useNavigate} from "react-router-dom";
 
 import Header from "../components/Header.jsx";
@@ -32,6 +32,10 @@ import Person5 from "../assets/person5.jpg";
 
 
 const Index = () => {
+
+    useEffect(() => {
+        document.title = "Duasisi Sejahtera";
+    }, []);
 
     const navigate = useNavigate();
 
@@ -97,11 +101,11 @@ const Index = () => {
 
                                 <div className="flex flex-row justify-between items-center gap-6 xl:gap-10 xl:mt-5">
                                     <Button
-                                        buttonClassName="flex flex-row justify-center items-center gap-4 cursor-pointer bg-button group hover:bg-black hover:shadow-2xl py-1 pl-4 3xl:pl-6 pr-1 rounded-full"
-                                        spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-2xl"
+                                        buttonClassName="flex flex-row justify-center items-center gap-4 cursor-pointer bg-button group hover:bg-black hover:shadow-2xl py-1 pl-4 3xl:pl-6 pr-1 rounded-full transition duration-400 ease"
+                                        spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-2xl transition duration-400 ease"
                                         buttonName="Outsourcer"
                                         circleClassName="bg-black rounded-full p-3 3xl:p-5"
-                                        arrowClassName="size-4 3xl:size-6 text-button group-hover:text-white"
+                                        arrowClassName="size-4 3xl:size-6 text-button group-hover:text-white transition duration-400 ease"
                                         functionButton={() => navigate("/tentang-kami")}
                                     />
 
@@ -118,11 +122,11 @@ const Index = () => {
 
                         <div className="absolute flex flex-col justify-between h-full px-8 xl:px-12 3xl:px-16 pb-8 3xl:pb-16 pt-8">
                             <Button
-                                buttonClassName="invisible xl:visible cursor-pointer flex flex-row justify-center items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
-                                spanClassName="font-reguler text-black text-md 3xl:text-xl group-hover:text-white"
+                                buttonClassName="invisible xl:visible cursor-pointer flex flex-row justify-center items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end transition duration-400 ease"
+                                spanClassName="font-reguler text-black text-md 3xl:text-xl group-hover:text-white transition duration-400 ease"
                                 buttonName="Konsultasi Yuk!"
-                                circleClassName="bg-black rounded-full p-2 xl:p-3 group-hover:bg-white"
-                                arrowClassName="size-4 text-button group-hover:text-black"
+                                circleClassName="bg-black rounded-full p-2 xl:p-3 group-hover:bg-white transition duration-400 ease"
+                                arrowClassName="size-4 text-button group-hover:text-black transition duration-400 ease"
                                 functionButton={handleKonsultasiButton}
                             />
 

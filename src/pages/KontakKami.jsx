@@ -3,9 +3,13 @@ import { useState } from "react";
 import Header from "../components/Header.jsx";
 
 import {motion, useInView} from "motion/react";
-import {useRef} from "react";
+import {useRef, useEffect} from "react";
 
 const KontakKami = () => {
+
+    useEffect(() => {
+        document.title = "Kontak Kami | Duasisi Sejahtera";
+    })
 
     const ref15 = useRef(null);
     const ref16 = useRef(null);
