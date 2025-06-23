@@ -71,7 +71,7 @@ const Index = () => {
                     {/*HERO*/}
                     <div className="pt-10 xl:pt-14 flex flex-col xl:flex-row justify-between items-center xl:relative">
                         <div className="flex flex-col xl:flex-row justify-center items-center gap-10">
-                            <div className="px-6 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-18 3xl:pt-10">
+                            <div className="px-6 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-5 2xl:pt-7 3xl:pt-28">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2">
                                     <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi adalah Partner Anda di dalam outsourcing</h2>
 
@@ -80,12 +80,16 @@ const Index = () => {
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true, amount: 0.5 }}
                                         transition={{ duration: 0.3, scale: { type: 'spring', bounce: 0.1 } }}
-                                        className="w-full font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-black text-center xl:text-left"
+                                        className="relative flex flex-col justify-center items-center xl:items-start"
                                     >
-                                        Sumber Daya Manusia
+                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl sm:text-6xl xl:text-7xl 3xl:text-8xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
+                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 sm:gap-15 xl:gap-14 3xl:gap-20 mt-7 xl:mt-13 3xl:mt-18 xl:-ml-5">
+                                            <div className="bg-yellow h-4 xl:h-8 3xl:h-11 w-[20rem] xl:w-[27rem] 3xl:w-[35.7rem]"></div>
+                                            <div className="bg-yellow h-4 xl:h-8 3xl:h-11 w-[13rem] xl:w-[16rem] 3xl:w-[22rem]"></div>
+                                        </div>
                                     </motion.h1>
 
-                                    <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
+                                    <p className="xl:mt-5 font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
                                         Dari arti dua pihak atau dua sisi, kami merasa HRD adalah
                                         bagian integral di perusahaan yang harus mementingkan dan
                                         mengatur hubungan antara perusahaan dan karyawan.</p>
@@ -96,7 +100,7 @@ const Index = () => {
                                         buttonClassName="flex flex-row justify-center items-center gap-4 cursor-pointer bg-button group hover:bg-black hover:shadow-2xl py-1 pl-4 3xl:pl-6 pr-1 rounded-full"
                                         spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-2xl"
                                         buttonName="Outsourcer"
-                                        circleClassName="bg-black rounded-full p-3 xl:p-5"
+                                        circleClassName="bg-black rounded-full p-3 3xl:p-5"
                                         arrowClassName="size-4 3xl:size-6 text-button group-hover:text-white"
                                         functionButton={() => navigate("/tentang-kami")}
                                     />
@@ -187,7 +191,7 @@ const Index = () => {
                                         id="animation"
                                         className="flex flex-col justify-center items-center"
                                     >
-                                        <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">30+</h3>
+                                        <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">30<span className="text-yellow">+</span></h3>
                                         <h3 className="text-white font-reguler text-xs xl:text-sm 3xl:text-lg">Perusahaan sudah dibantu</h3>
                                     </motion.div>
 
@@ -199,7 +203,7 @@ const Index = () => {
                                         id="animation"
                                         className="flex flex-col justify-center items-center"
                                     >
-                                        <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">95%</h3>
+                                        <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">95<span className="text-yellow">%</span></h3>
                                         <h3 className="text-white font-reguler text-xs xl:text-sm 3xl:text-lg">Kandidat diterima</h3>
                                     </motion.div>
 
@@ -232,16 +236,20 @@ const Index = () => {
             <div className="px-6 xl:px-20 3xl:px-60 pt-10 3xl:pt-25">
                 <div className="flex flex-col justify-between items-center gap-8">
                     <div className="flex flex-col justify-between items-center gap-6">
-                        <motion.h2
+                        <motion.div
                             ref={ref6}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: isInView6 ? 1 : 0 }}
                             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                             id="animation"
-                            className="font-semibold text-black text-3xl xl:text-6xl text-center xl:text-left"
+                            className="relative flex flex-col justify-center items-center"
                         >
-                            Satu solusi, semua layanan HR
-                        </motion.h2>
+                            <h1 className="font-semibold text-black text-3xl sm:text-4xl xl:text-6xl text-center xl:text-left">Satu solusi, semua layanan HR</h1>
+                            <div className="absolute -z-10 flex flex-col sm:flex-row justify-center items-center xl:items-start gap-5 sm:gap-10 xl:gap-30 3xl:gap-25 mt-5 sm:mt-7 xl:mt-13 3xl:mt-12 sm:ml-22 xl:ml-33 3xl:ml-36">
+                                <div className="bg-yellow mr-5 sm:mr-0 h-3 xl:h-8 3xl:h-9 w-[5rem] sm:w-[6rem] xl:w-[10rem] 3xl:w-[11rem]"></div>
+                                <div className="bg-yellow sm:ml-21 h-3 xl:h-8 3xl:h-9 w-[11rem] sm:w-[12rem] xl:w-[20rem] 3xl:w-[21rem]"></div>
+                            </div>
+                        </motion.div>
 
                         <motion.p
                             ref={ref7}

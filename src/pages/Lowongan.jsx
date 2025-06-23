@@ -6,6 +6,7 @@ import {useRef} from "react";
 
 import Header from "../components/Header.jsx";
 import Video from "../assets/tutorial.mp4";
+import BannerCTA from "../components/BannerCTA.jsx";
 import PelatihanHRDImage from "../assets/imagepelatihanhrd.png";
 import {motion} from "motion/react";
 
@@ -256,6 +257,23 @@ const Lowongan = () => {
                     </div>
                 )}
 
+            </div>
+
+            {/*BANNER CTA*/}
+            <div className="w-full relative flex flex-col ">
+                <BannerCTA
+                    mainClassName="bg-yellow flex flex-col xl:flex-row justify-center items-center gap-8 3xl:gap-12 py-10 xl:py-20 3xl:py-30"
+                    bannerCTAwords="Tertarik? Langsung Hubungi Kami"
+                    bannerCTAwordsClassName="font-reguler text-black text-4xl xl:text-5xl 3xl:text-7xl text-center"
+                    buttonClassName="hover:shadow-2xl cursor-pointer flex flex-row justify-center items-center gap-4 bg-black py-1 3xl:py-2 pl-4 3xl:pl-6 pr-1 3xl:pr-2 rounded-full w-fit self-center xl:self-end"
+                    circleClassName="bg-primary rounded-full p-3 3xl:p-4"
+                    buttonName="Hubungi Kami"
+                    spanClassName="font-reguler text-white text-md 3xl:text-2xl"
+                    arrowClassName="size-4 3xl:size-6 text-black"
+                />
+
+                <div className="absolute bg-black size-15 3xl:size-25 rounded-full blur-[5rem] -ml-5 mt-8"></div>
+                <div className="absolute bg-black size-20 3xl:size-35 rounded-full blur-[6rem] mt-30 3xl:mt-50 -mr-5 3xl:ml-[110rem]"></div>
             </div>
         </div>
     )

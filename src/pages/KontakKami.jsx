@@ -67,7 +67,11 @@ const KontakKami = () => {
                             kerja sama. Sampaikan pesan Anda melalui halaman
                             kontak kami dan dapatkan tanggapan secepatnya</p>
 
-                        <h4 className="text-md font-reguler text-black text-center xl:text-left">Jl. Lapangan Bola No. 9C Kebun Jeruk, Jakarta Barat</h4>
+                        <h4 className="text-md font-reguler text-black text-center xl:text-left">
+                            Neo Soho Residence, Letjen S. Parman St No.28, RT.3/RW.5, <br/>
+                            South Tanjung Duren, Grogol petamburan, <br/>
+                            West Jakarta City, Jakarta 11470, Indonesia
+                        </h4>
 
                         <h4 className="text-md font-reguler text-black text-center xl:text-left">(021)-5366 6356 hrd.recruitment@duasisi.id</h4>
                     </motion.div>

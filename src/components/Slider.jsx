@@ -13,18 +13,33 @@ const Slider = ({
 
     return(
         <div className="w-full">
-            <Swiper
-                modules={[Navigation, Pagination, Autoplay]}
-                pagination={{clickable: true}}
-                autoplay={{delay: 3000}}
-                spaceBetween={30}
-                slidesPerView={1}
-                breakpoints={{
-                    1280: {
-                        slidesPerView: 3,
+            <style>
+                {`
+                    .swiper-pagination-bullet {
+                        background-color: #facc15 !important;
+                        opacity: 0.3;
                     }
-                }}
-                className="">
+                    
+                    .swiper-pagination-bullet-active {
+                        background-color: #facc15 !important;
+                        opacity: 1;
+                    }
+                `}
+            </style>
+
+            <div className="">
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    pagination={{clickable: true}}
+                    autoplay={{delay: 3000}}
+                    spaceBetween={30}
+                    slidesPerView={1}
+                    breakpoints={{
+                        1280: {
+                            slidesPerView: 3,
+                        }
+                    }}
+                    className="">
 
                     <SwiperSlide className="pb-10 xl:pb-20">
                         <div className="bg-primary p-6 3xl:p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
@@ -90,7 +105,8 @@ const Slider = ({
                             </div>
                         </div>
                     </SwiperSlide>
-            </Swiper>
+                </Swiper>
+            </div>
         </div>
     )
 }

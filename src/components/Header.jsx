@@ -20,7 +20,10 @@ const Header = ({ headerWidth }) => {
     const visibleRoutes = ["/tentang-kami", "/layanan", "/lowongan", "/kontak-kami"]
     const isButtonVisible = visibleRoutes.includes(location.pathname) || location.pathname.startsWith("/lowongan/detail-lowongan/");
 
-    const visibleRoutesForAll = ["/", "/tentang-kami", "/lowongan", "/kontak-kami"]
+    const visibleRoutesForHome = ["/"]
+    const isHeaderForHome = visibleRoutesForHome.includes(location.pathname);
+
+    const visibleRoutesForAll = ["/tentang-kami", "/lowongan", "/kontak-kami"]
     const isHeaderForAll = visibleRoutesForAll.includes(location.pathname) || location.pathname.startsWith("/lowongan/detail-lowongan/");
 
     const visibleRouteWhite = ["/layanan"];
@@ -37,7 +40,8 @@ const Header = ({ headerWidth }) => {
 
     return(
         <div className={headerWidth}>
-            {isHeaderForAll && (
+            {/*HEADER FOR HOME PAGE*/}
+            {isHeaderForHome && (
                 <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
                     <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
                         <img
@@ -46,7 +50,7 @@ const Header = ({ headerWidth }) => {
                             className="w-35 3xl:w-45 cursor-pointer"
                             onClick={() => navigate("/")} />
 
-                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:text-xl">
+                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:text-xl 3xl:mr-1">
                             <li
                                 onClick={() => navigate("/")}
                                 className={`${location.pathname === "/" ? "font-bold" : ""} cursor-pointer`}
@@ -82,7 +86,65 @@ const Header = ({ headerWidth }) => {
 
                         {isButtonVisible && (
                             <Button
-                                buttonClassName="hidden xl:flex xl:mr-20 3xl:mr-60 flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                buttonClassName="hidden xl:flex flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
+                                spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-xl"
+                                buttonName="Konsultasi Yuk!"
+                                circleClassName="bg-black group-hover:bg-white rounded-full p-2 3xl:p-3"
+                                arrowClassName="size-4 text-button group-hover:text-black"
+                                functionButton={handleKonsultasi}
+                            />
+                        )}
+                    </div>
+                </div>
+            )}
+
+            {/*HEADER FOR ALL PAGE*/}
+            {isHeaderForAll && (
+                <div className="px-6 xl:px-20 3xl:px-60 w-full">
+                    <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
+                        <img
+                            src={Logo}
+                            alt="logo-dss"
+                            className="w-35 3xl:w-45 cursor-pointer"
+                            onClick={() => navigate("/")} />
+
+                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:text-xl">
+                            <li
+                                onClick={() => navigate("/")}
+                                className={`${location.pathname === "/" ? "font-bold" : ""} cursor-pointer`}
+                            >Beranda
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/tentang-kami")}
+                                className={`${location.pathname === "/tentang-kami" ? "font-bold" : ""} cursor-pointer`}
+                            >Tentang Kami
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/layanan")}
+                                className={`${location.pathname === "/layanan" ? "font-bold" : ""} cursor-pointer`}
+                            >Layanan
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/lowongan")}
+                                className={`${location.pathname === "/lowongan" || location.pathname.startsWith("/lowongan/detail-lowongan/") ? "font-bold" : ""} cursor-pointer`}
+                            >Lowongan
+                            </li>
+
+                            <li
+                                onClick={() => navigate("/kontak-kami")}
+                                className={`${location.pathname === "/kontak-kami" ? "font-bold" : ""} cursor-pointer`}
+                            >Kontak Kami
+                            </li>
+                        </ul>
+
+                        <MdMenu className="size-8 xl:hidden" onClick={isActiveMobileMenu}/>
+
+                        {isButtonVisible && (
+                            <Button
+                                buttonClassName="hidden xl:flex flex-row justify-center cursor-pointer items-center gap-4 bg-button group hover:bg-black py-1 pl-4 3xl:pl-6 pr-1 rounded-full w-fit self-end"
                                 spanClassName="font-reguler text-black group-hover:text-white text-md 3xl:text-xl"
                                 buttonName="Konsultasi Yuk!"
                                 circleClassName="bg-black group-hover:bg-white rounded-full p-2 3xl:p-3"
@@ -96,7 +158,7 @@ const Header = ({ headerWidth }) => {
 
             {/*HEADER FOR LAYANAN PAGE*/}
             {isHeaderVisibleWhite && (
-                <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
+                <div className="px-6 xl:px-20 3xl:px-60">
                     <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
                         <img
                             src={LogoWhite}
@@ -104,7 +166,7 @@ const Header = ({ headerWidth }) => {
                             className="w-35 3xl:w-45 cursor-pointer"
                             onClick={() => navigate("/")} />
 
-                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:mr-5 text-white">
+                        <ul className="hidden xl:flex flex-row gap-4 text-md 3xl:text-xl text-white">
                             <li
                                 onClick={() => navigate("/")}
                                 className={`${location.pathname === "/" ? "font-bold" : ""} cursor-pointer`}

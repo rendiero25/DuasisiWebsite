@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="flex flex-col justify-between items-center gap-12 py-5">
                 <div className="flex flex-col xl:flex-row justify-between items-center xl:items-end gap-10 w-full">
                     <div className="flex flex-col justify-between items-center xl:items-start gap-6">
-                        <h2 className="text-white font-medium text-3xl xl:text-6xl 3xl:text-7xl text-center xl:text-left">Outsourcing atau jasa <br/> penyaluran tenaga kerja</h2>
+                        <h2 className="text-white font-medium leading-tight text-3xl xl:text-5xl text-center xl:text-left">Outsourcing atau jasa <br/> penyaluran tenaga kerja</h2>
                         <ul className="flex flex-wrap justify-center xl:justify-start items-center gap-4 text-white font-reguler text-sm 3xl:text-lg xl:max-w-md">
                             <li className="cursor-pointer" onClick={() => navigate("/")}>Beranda</li>
                             <li className="size-2 rounded-full bg-white"></li>
@@ -31,9 +31,10 @@ const Footer = () => {
 
                     <div className="max-w-2xl flex flex-col justify-between items-center xl:items-end gap-4">
                         <img src={LogoWhite} alt="logo-dsswhite" className="w-50 cursor-pointer" onClick={() => navigate("/")} />
-                        <p className="font-reguler text-white text-sm 3xl:text-lg leading-normal text-center xl:text-right">Jl. Lapangan Bola No. 9C, RT.03, RW.10 <br/>
-                            Kebun Jeruk Jakarta Barat <br/>
-                            Daerah Khusus Ibukota Jakarta, 11530</p>
+                        <p className="font-reguler text-white text-sm 3xl:text-lg leading-normal text-center xl:text-right">
+                            Neo Soho Residence, Letjen S. Parman St No.28, RT.3/RW.5, <br/>
+                            South Tanjung Duren, Grogol petamburan, <br/>
+                            West Jakarta City, Jakarta 11470, Indonesia</p>
                     </div>
                 </div>
 
