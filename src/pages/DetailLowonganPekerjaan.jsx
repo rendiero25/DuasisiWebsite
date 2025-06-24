@@ -192,11 +192,11 @@ const DetailLowonganPekerjaan = () => {
 
                             <div className="w-full flex justify-start xl:justify-end">
                                 <Button
-                                    buttonClassName="flex flex-row justify-center items-center cursor-pointer gap-4 bg-primary py-1 pl-4 xl:pl-6 3xl:pl-6 pr-1 rounded-full w-fit self-end group hover:bg-black"
-                                    spanClassName="font-medium text-black group-hover:text-white text-md 3xl:text-xl"
+                                    buttonClassName="flex flex-row justify-center items-center cursor-pointer gap-4 bg-primary py-1 pl-4 xl:pl-6 3xl:pl-6 pr-1 rounded-full w-fit self-end group hover:bg-black transition duration-400 ease"
+                                    spanClassName="font-medium text-black group-hover:text-white text-md 3xl:text-xl transition duration-400 ease"
                                     buttonName="Kirim Lamaran"
-                                    circleClassName="bg-black group-hover:bg-white rounded-full p-3"
-                                    arrowClassName="size-4 text-primary group-hover:text-black"
+                                    circleClassName="bg-black group-hover:bg-white rounded-full p-3 transition duration-400 ease"
+                                    arrowClassName="size-4 text-primary group-hover:text-black transition duration-400 ease"
                                     functionButton={handleKirimLamaran}
                                 />
                             </div>

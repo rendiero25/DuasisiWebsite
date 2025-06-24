@@ -1,3 +1,5 @@
+import {useEffect} from "react";
+
 import Header from "../components/Header.jsx";
 import BannerCTA from "../components/BannerCTA.jsx";
 import BgLayanan from "../assets/bglayanan.png";
@@ -9,6 +11,11 @@ import 'swiper/css/pagination';
 import {delay} from "motion";
 
 const Layanan = () => {
+
+    useEffect(() => {
+        document.title = "Layanan | Duasisi Sejahtera";
+    }, [])
+
     return(
         <div className="relative flex flex-col">
             <style>
