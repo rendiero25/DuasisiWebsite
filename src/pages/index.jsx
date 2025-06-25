@@ -75,7 +75,7 @@ const Index = () => {
                     {/*HERO*/}
                     <div className="pt-10 xl:pt-14 flex flex-col xl:flex-row justify-between items-center xl:relative">
                         <div className="flex flex-col xl:flex-row justify-center items-center gap-10">
-                            <div className="px-6 lg:px-16 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-5 2xl:pt-7 3xl:pt-28">
+                            <div className="px-6 lg:px-16 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-5 2xl:pt-7 3xl:pt-28 4xl:mt-33">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2">
                                     <h2 className="font-semibold text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi adalah Partner Anda di dalam outsourcing</h2>
 
@@ -86,10 +86,10 @@ const Index = () => {
                                         transition={{ duration: 0.3, scale: { type: 'spring', bounce: 0.1 } }}
                                         className="relative flex flex-col justify-center items-center xl:items-start"
                                     >
-                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
-                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 sm:gap-15 lg:gap-20 xl:gap-20 3xl:gap-20 mt-7 md:mt-12 lg:mt-16 xl:mt-16 3xl:mt-18 xl:-ml-5">
-                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[20rem] md:w-[29rem] lg:w-[40rem] xl:w-[36rem] 3xl:w-[35.7rem]"></div>
-                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[13rem] md:w-[18rem] lg:w-[25rem] xl:w-[22rem] 3xl:w-[22rem]"></div>
+                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl sm:text-6xl md:text-7xl md1:text-8xl 4xl:text-9xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
+                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 sm:gap-15 md1:gap-18 lg:gap-20 xl:gap-20 3xl:gap-20 4xl:gap-23 mt-7 md:mt-12 md1:mt-16 xl:mt-16 3xl:mt-18 4xl:mt-23 xl:-ml-5">
+                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[20rem] md:max-lg:w-[29rem] xl:w-[36rem] 3xl:w-[35.7rem] 4xl:w-[47rem]"></div>
+                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[13rem] md:w-[18rem] lg:w-[25rem] xl:w-[22rem] 3xl:w-[22rem] 4xl:w-[28rem]"></div>
                                         </div>
                                     </motion.h1>
 

@@ -12,6 +12,7 @@
   --color-button: #FFB843;
   --color-yellow: #FEC109;
 
+  --breakpoint-md1: 50rem;
   --breakpoint-xl: 80rem; /*1280 x 768*/
   --breakpoint-2xl: 64rem; /*1336 x 768*/
   --breakpoint-3xl: 120rem; /*1920 x 1080*/
@@ -26,5 +27,13 @@
 
   .swiper-pagination-bullet-active {
     @apply bg-yellow-300 opacity-100;
+  }
+
+  .swiper-button-next {
+    @apply opacity-100 w-10;
+  }
+
+  .swiper-button-prev {
+    @apply opacity-100 w-10;
   }
 }

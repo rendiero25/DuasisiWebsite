@@ -56,7 +56,7 @@ const TentangKami = () => {
                     </div>
                 </div>
 
-                <img src={Employees} alt="employees-image" className="pt-10 xl:pt-20 3xl:pt-35 w-full h-auto object-cover"/>
+                <img src={Employees} alt="employees-image" className="pt-10 xl:pt-20 3xl:pt-35 4xl:pt-53 w-full h-auto object-cover"/>
             </div>
 
             <div className="relative flex flex-col w-full">
