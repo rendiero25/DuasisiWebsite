@@ -34,11 +34,11 @@ const Layanan = () => {
 
             <div className="">
                 <img src={BgLayanan} alt="bglayanan-image" className="absolute -z-20 w-full h-full object-cover"/>
-                <div className="bg-black/80 min-h-screen flex flex-col justify-between">
+                <div className="bg-black/80 xl:min-h-screen flex flex-col justify-between">
                     <Header headerWidth="w-full"/>
 
                     <div className="w-full flex flex-col justify-between items-center">
-                        <div className="px-6 xl:px-20 3xl:px-60 py-10 xl:pb-20 w-full">
+                        <div className="px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60 py-10 xl:pb-20 w-full">
                             <Swiper
                                 modules={[Pagination, Autoplay]}
                                 pagination={{clickable: true}}
@@ -68,7 +68,7 @@ const Layanan = () => {
                                     </div>
                                 </SwiperSlide>
 
-                                <SwiperSlide className="pb-15 3xl:pb-30">
+                                <SwiperSlide className="pb-15 xl:pb-25 3xl:pb-30">
                                     <div className="flex flex-col justify-between items-center xl:items-start gap-4 xl:max-w-7xl">
                                         <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left">Layanan Kami</h2>
                                         <h1 className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-white text-center xl:text-left">Benefit Outsourcing</h1>

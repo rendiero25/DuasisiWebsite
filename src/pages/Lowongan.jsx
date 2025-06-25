@@ -80,7 +80,7 @@ const Lowongan = () => {
         <div className="flex flex-col justify-between items-center">
             <Header headerWidth="w-full"/>
 
-            <div className="px-6 py-10 xl:py-25 xl:px-20 3xl:px-60 flex flex-col justify-between items-center gap-8 xl:gap-12 3xl:gap-16">
+            <div className="px-6 md:px-12 lg:px-16 py-10 xl:py-25 xl:px-20 3xl:px-60 flex flex-col justify-between items-center gap-8 xl:gap-12 3xl:gap-16">
                 <div className="flex flex-col justify-between items-center gap-10">
                     <motion.h2
                         ref={ref13}
@@ -88,7 +88,7 @@ const Lowongan = () => {
                         animate={{ opacity: isInView13 ? 1 : 0 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
                         id="animation"
-                        className="font-semibold text-6xl sm:text-8xl text-black text-center"
+                        className="font-semibold text-6xl sm:text-7xl text-black text-center"
                     >
                         Dapatkan Pekerjaan Anda Bersama Kami
                     </motion.h2>
@@ -99,7 +99,7 @@ const Lowongan = () => {
                         animate={{ opacity: isInView14 ? 1 : 0 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                         id="animation"
-                        className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left"
+                        className="font-reguler text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left"
                     >
                         Temukan peluang terbaik, raih karier impian, dan mulai perjalanan suksesmu sekarang juga
                     </motion.p>
@@ -177,7 +177,7 @@ const Lowongan = () => {
 
                     <div className="flex flex-col justify-between items-center xl:items-start gap-4 xl:max-w-xl">
                         <h3 className="font-semibold text-xl xl:text-5xl text-black">Tutorial Upload CV</h3>
-                        <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">
+                        <p className="font-reguler text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">
                             Jika Anda kebingungan dalam mengupload/mengirim
                             CV, silahkan Anda menonton video ini terlebih dahulu
                             agar mempermudahkan Anda dalam mengirim CV. Happy Watching!
@@ -186,7 +186,7 @@ const Lowongan = () => {
                 </div>
             </div>
 
-            <div className="w-full bg-gradient-to-tr from-primary via-primary to-black/80 py-10 xl:py-25 px-6 xl:px-20 3xl:px-60 flex flex-col justify-center items-center">
+            <div className="w-full bg-gradient-to-tr from-primary via-primary to-black/80 py-10 xl:py-25 px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60 flex flex-col justify-center items-center">
                 <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 xl:gap-8 justify-center items-center w-full">
                     {loading ? (
                         // Loading skeleton
@@ -214,13 +214,13 @@ const Lowongan = () => {
                                     <img
                                         src={job.logoPerusahaan}
                                         alt={`${job.namaPerusahaan} logo`}
-                                        className="size-1/2 object-cover"
+                                        className="size-1/2 md:w-1/4 object-cover"
                                     />
                                     <div className="flex-1">
-                                        <h3 className="font-bold text-lg xl:text-2xl text-black mb-1 line-clamp-1">
+                                        <h3 className="font-bold text-lg md:text-2xl text-black mb-1 line-clamp-1">
                                             {job.namaPekerjaan}
                                         </h3>
-                                        <p className="font-semibold text-black text-sm xl:text-lg">
+                                        <p className="font-semibold text-black text-sm md:text-lg">
                                             {job.namaPerusahaan}
                                         </p>
                                     </div>
@@ -228,17 +228,17 @@ const Lowongan = () => {
 
                                 {/* Alamat Perusahaan */}
                                 <div className="mb-4">
-                                    <p className="font-reguler text-black text-sm xl:text-lg leading-relaxed line-clamp-2">
+                                    <p className="font-reguler text-black text-sm md:text-lg leading-relaxed line-clamp-2">
                                         {job.alamatPerusahaan}
                                     </p>
                                 </div>
 
                                 {/* Info Tambahan */}
                                 <div className="mb-4 space-y-1">
-                                    <p className="text-xs xl:text-lg text-black font-reguler">
+                                    <p className="text-xs md:text-lg text-black font-reguler">
                                         {job.tipeKerja} • {job.lokasi}
                                     </p>
-                                    <p className="text-xs xl:text-lg text-black font-reguler">
+                                    <p className="text-xs md:text-lg text-black font-reguler">
                                         {job.gaji}
                                     </p>
                                 </div>

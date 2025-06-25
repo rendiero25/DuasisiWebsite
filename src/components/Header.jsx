@@ -42,7 +42,7 @@ const Header = ({ headerWidth }) => {
         <div className={headerWidth}>
             {/*HEADER FOR HOME PAGE*/}
             {isHeaderForHome && (
-                <div className="px-6 xl:pr-12 xl:pl-20 3xl:pl-60">
+                <div className="px-6 md:px-12 lg:px-16 xl:pr-12 xl:pl-20 3xl:pl-60">
                     <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
                         <img
                             src={Logo}
@@ -100,7 +100,7 @@ const Header = ({ headerWidth }) => {
 
             {/*HEADER FOR ALL PAGE*/}
             {isHeaderForAll && (
-                <div className="px-6 xl:px-20 3xl:px-60 w-full">
+                <div className="px-6 md:px-14 lg:px-16 xl:px-20 3xl:px-60 w-full">
                     <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
                         <img
                             src={Logo}
@@ -158,7 +158,7 @@ const Header = ({ headerWidth }) => {
 
             {/*HEADER FOR LAYANAN PAGE*/}
             {isHeaderVisibleWhite && (
-                <div className="px-6 xl:px-20 3xl:px-60">
+                <div className="px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60">
                     <div className="flex flex-row justify-between items-center pt-4 xl:py-8">
                         <img
                             src={LogoWhite}
@@ -215,7 +215,7 @@ const Header = ({ headerWidth }) => {
             )}
 
             {showmobilemenu && (
-                <div className="xl:hidden absolute z-20 top-0 bg-black flex flex-col gap-4 justify-between items-start px-6 py-10 w-full h-screen">
+                <div className="xl:hidden absolute z-20 top-0 bg-black flex flex-col gap-4 justify-between items-start px-6 sm:px-12 lg:px-16 py-10 w-full h-screen">
                     <div className="flex flex-row justify-between items-center gap-4 w-full">
                         <img src={LogoWhite} alt="logo-dsswhite" className="w-50" onClick={() => navigate("/")}/>
                         <IoMdClose className="size-12 self-center text-white" onClick={IsNotActiveMobileMenu}/>

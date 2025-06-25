@@ -28,7 +28,7 @@ const TentangKami = () => {
             <div className="bg-primary xl:min-h-screen">
                 <Header headerWidth="w-full"/>
 
-                <div className="px-6 xl:px-20 3xl:px-60 pt-10 xl:pt-25">
+                <div className="px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60 pt-10 xl:pt-25">
                     <div className="flex flex-col justify-between items-center gap-10">
 
                         <motion.div
@@ -40,11 +40,11 @@ const TentangKami = () => {
                             className="flex flex-col xl:flex-row justify-between items-center gap-6 xl:gap-12"
                         >
                             <div className="flex flex-col justify-center items-center xl:items-start gap-2">
-                                <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left">Apa itu jasa</h2>
+                                <h2 className="font-semibold text-md md:text-lg 3xl:text-2xl text-white text-center xl:text-left">Apa itu jasa</h2>
                                 <h1 className="font-reguler 3xl:font-medium text-6xl sm:text-8xl xl:text-8xl 3xl:text-9xl text-white text-center xl:text-left">Outsourcing?</h1>
                             </div>
 
-                            <p className="font-reguler text-md xl:text-lg 3xl:text-2xl text-white text-center xl:text-left">
+                            <p className="font-reguler text-md md:text-lg 3xl:text-2xl text-white text-center xl:text-left">
                                 Outsourcing adalah Jasa Penyaluran Tenaga Kerja.
                                 Kita bisa merekrut karyawan sesuai permintaan
                                 Anda sampai melakukan penghitungan gaji dan
@@ -60,7 +60,7 @@ const TentangKami = () => {
             </div>
 
             <div className="relative flex flex-col w-full">
-                <div className="px-6 xl:px-20 3xl:px-60 flex flex-col xl:flex-row justify-between items-center gap-10 xl:gap-20 3xl:gap-30 pb-15 xl:pb-25 pt-15 xl:pt-25">
+                <div className="px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60 flex flex-col xl:flex-row justify-between items-center gap-10 xl:gap-20 3xl:gap-30 pb-15 xl:pb-25 pt-15 xl:pt-25">
                     <motion.img
                         ref={ref10}
                         src={PelatihanHRDImage}
@@ -92,7 +92,7 @@ const TentangKami = () => {
                             animate={{ opacity: isInView12 ? 1 : 0 }}
                             transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                             id="animation"
-                            className="font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left"
+                            className="font-reguler text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left"
                         >
                             Selain konsultasi kami juga bersedia melatih karyawan HRD
                             Anda untuk mengikuti standar prosedur kami. Ini akan

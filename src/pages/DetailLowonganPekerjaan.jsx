@@ -154,7 +154,7 @@ const DetailLowonganPekerjaan = () => {
         <div className="min-h-screen flex flex-col justify-between items-center bg-gradient-to-br from-white via-white to-primary/40">
             <Header headerWidth="w-full"/>
 
-            <div className="px-6 py-10 xl:pb-25 xl:px-20 3xl:px-60 w-full">
+            <div className="px-6 md:px-12 lg:px-16 py-10 xl:pb-25 xl:px-20 3xl:px-60 w-full">
                 <div className="w-full flex flex-col gap-4">
 
                     {/* Back Button */}
@@ -212,7 +212,7 @@ const DetailLowonganPekerjaan = () => {
                                     Deskripsi Pekerjaan
                                 </h3>
                                 <div className="prose prose-lg max-w-none">
-                                    <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+                                    <p className="text-gray-700 text-md md:text-lg leading-relaxed whitespace-pre-line">
                                         {jobDetail.deskripsiPekerjaan}
                                     </p>
                                 </div>
@@ -225,24 +225,24 @@ const DetailLowonganPekerjaan = () => {
                                 </h4>
                                 <div className="space-y-4">
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">Gaji:</span>
-                                        <span className="text-black font-medium">{jobDetail.gaji}</span>
+                                        <span className="font-semibold text-gray-600 text-md md:text-lg">Gaji:</span>
+                                        <span className="text-black font-medium text-md md:text-lg">{jobDetail.gaji}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">Tipe Kerja:</span>
-                                        <span className="text-black font-medium">{jobDetail.tipeKerja}</span>
+                                        <span className="font-semibold text-gray-600 text-md md:text-lg">Tipe Kerja:</span>
+                                        <span className="text-black font-medium text-md md:text-lg">{jobDetail.tipeKerja}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">Lokasi:</span>
-                                        <span className="text-black font-medium">{jobDetail.lokasi}</span>
+                                        <span className="font-semibold text-gray-600 text-md md:text-lg">Lokasi:</span>
+                                        <span className="text-black font-medium text-md md:text-lg">{jobDetail.lokasi}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">Deadline:</span>
-                                        <span className="text-black font-medium">{jobDetail.deadline}</span>
+                                        <span className="font-semibold text-gray-600 text-md md:text-lg">Deadline:</span>
+                                        <span className="text-black font-medium text-md md:text-lg">{jobDetail.deadline}</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="font-semibold text-gray-600">Posted:</span>
-                                        <span className="text-black font-medium">{jobDetail.postedDate}</span>
+                                        <span className="font-semibold text-gray-600 text-md md:text-lg">Posted:</span>
+                                        <span className="text-black font-medium text-md md:text-lg">{jobDetail.postedDate}</span>
                                     </div>
                                 </div>
                             </div>
@@ -261,7 +261,7 @@ const DetailLowonganPekerjaan = () => {
                                     {jobDetail.persyaratanKhusus && jobDetail.persyaratanKhusus.length > 0 ? (
                                         <ul className="text-gray-700 space-y-1">
                                             {jobDetail.persyaratanKhusus.map((requirement, index) => (
-                                                <li key={index} className="flex items-start">
+                                                <li key={index} className="flex items-start text-md md:text-lg">
                                                     <span className="mr-2 text-black">•</span>
                                                     <span>{requirement}</span>
                                                 </li>

@@ -42,8 +42,8 @@ const Slider = ({
                     className="">
 
                     <SwiperSlide className="pb-10 xl:pb-20">
-                        <div className="bg-primary p-6 3xl:p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
-                            <p className="text-sm xl:text-md 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial1}</p>
+                        <div className="bg-primary p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
+                            <p className="text-sm md:text-lg lg:text-2xl xl:text-sm 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial1}</p>
                             <div className="flex flex-row justify-between items-center gap-2 3xl:gap-4">
                                 <img src={image1} alt="persontesti1-image" className="size-12 3xl:size-16 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
@@ -55,8 +55,8 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 3xl:p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
-                            <p className="text-sm xl:text-md 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial2}</p>
+                        <div className="bg-primary p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
+                            <p className="text-sm md:text-lg lg:text-2xl xl:text-sm 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial2}</p>
                             <div className="flex flex-row justify-between items-center gap-2 3xl:gap-4">
                                 <img src={image2} alt="persontesti1-image" className="size-12 3xl:size-16 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
@@ -68,8 +68,8 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 3xl:p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
-                            <p className="text-sm xl:text-md 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial3}</p>
+                        <div className="bg-primary p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
+                            <p className="text-sm md:text-lg lg:text-2xl xl:text-sm 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial3}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
                                 <img src={image3} alt="persontesti1-image" className="size-12 3xl:size-16 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
@@ -81,8 +81,8 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 3xl:p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
-                            <p className="text-sm xl:text-md 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial4}</p>
+                        <div className="bg-primary p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
+                            <p className="text-sm md:text-lg lg:text-2xl xl:text-sm 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial4}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
                                 <img src={image4} alt="persontesti1-image" className="size-12 3xl:size-16 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">
@@ -94,8 +94,8 @@ const Slider = ({
                     </SwiperSlide>
 
                     <SwiperSlide>
-                        <div className="bg-primary p-6 3xl:p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
-                            <p className="text-sm xl:text-md 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial5}</p>
+                        <div className="bg-primary p-8 rounded-2xl flex flex-col justify-between items-start gap-4 w-full h-50 3xl:h-70">
+                            <p className="text-sm md:text-lg lg:text-2xl xl:text-sm 3xl:text-xl font-medium text-white text-left leading-normal">{testimonial5}</p>
                             <div className="flex flex-row justify-between items-center gap-2">
                                 <img src={image5} alt="persontesti1-image" className="size-12 3xl:size-16 rounded-full object-cover"/>
                                 <div className="flex flex-col justify-between items-start gap-1">

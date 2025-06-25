@@ -53,7 +53,7 @@ const KontakKami = () => {
             <Header headerWidth="w-full"/>
 
             <div className="flex flex-col justify-between items-center w-full bg-gradient-to-br from-white via-white to-primary/30">
-                <div className="px-6 xl:px-20 3xl:px-60 py-10 3xl:py-25 flex flex-col w-full xl:flex-row justify-between items-start gap-10 xl:gap-25">
+                <div className="px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60 py-10 3xl:py-25 flex flex-col w-full xl:flex-row justify-between items-start gap-10 xl:gap-25">
 
                     <motion.div
                         ref={ref15}
@@ -63,15 +63,15 @@ const KontakKami = () => {
                         id="animation"
                         className="flex flex-col justify-between items-center xl:items-start gap-4 xl:max-w-lg h-full"
                     >
-                        <h1 className="font-bold text-5xl xl:text-7xl text-black text-center xl:text-left">Tersambung Langsung ke Tim Kami</h1>
+                        <h1 className="font-bold text-5xl md:text-7xl text-black text-center xl:text-left">Tersambung Langsung ke Tim Kami</h1>
 
-                        <p className="font-semibold text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">
+                        <p className="font-semibold text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">
                             Kami siap membantu menjawab pertanyaan Anda,
                             mendiskusikan permasalahan Anda, atau memulai
                             kerja sama. Sampaikan pesan Anda melalui halaman
                             kontak kami dan dapatkan tanggapan secepatnya</p>
 
-                        <h4 className="text-md font-reguler text-black text-center xl:text-left">
+                        <h4 className="text-md md:text-lg font-reguler text-black text-center xl:text-left">
                             Neo Soho Residence, Letjen S. Parman St No.28, RT.3/RW.5, <br/>
                             South Tanjung Duren, Grogol petamburan, <br/>
                             West Jakarta City, Jakarta 11470, Indonesia
@@ -93,7 +93,7 @@ const KontakKami = () => {
                         >
                             <div className="grid grid-cols-1 gap-6 mb-6">
                                 <div>
-                                    <label htmlFor="namaLengkap" className="block text-sm font-semibold text-black mb-2">
+                                    <label htmlFor="namaLengkap" className="block text-sm md:text-lg font-semibold text-black mb-2">
                                         Nama Lengkap
                                     </label>
                                     <input
@@ -109,7 +109,7 @@ const KontakKami = () => {
                                 </div>
 
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-semibold text-black mb-2">
+                                    <label htmlFor="email" className="block text-sm md:text-lg font-semibold text-black mb-2">
                                         Email Address
                                     </label>
                                     <input
@@ -126,7 +126,7 @@ const KontakKami = () => {
                             </div>
 
                             <div className="mb-6">
-                                <label htmlFor="subjek" className="block text-sm font-semibold text-black mb-2">
+                                <label htmlFor="subjek" className="block text-sm md:text-lg font-semibold text-black mb-2">
                                     Subjek Pesan
                                 </label>
                                 <input
@@ -142,7 +142,7 @@ const KontakKami = () => {
                             </div>
 
                             <div className="mb-6">
-                                <label htmlFor="pesan" className="block text-sm font-semibold text-black mb-2">
+                                <label htmlFor="pesan" className="block text-sm md:text-lg font-semibold text-black mb-2">
                                     Isi Pesan
                                 </label>
                                 <textarea

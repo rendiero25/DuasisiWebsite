@@ -75,9 +75,9 @@ const Index = () => {
                     {/*HERO*/}
                     <div className="pt-10 xl:pt-14 flex flex-col xl:flex-row justify-between items-center xl:relative">
                         <div className="flex flex-col xl:flex-row justify-center items-center gap-10">
-                            <div className="px-6 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-5 2xl:pt-7 3xl:pt-28">
+                            <div className="px-6 lg:px-16 xl:px-20 3xl:px-60 flex flex-col justify-center items-center xl:items-start gap-10 xl:pt-5 2xl:pt-7 3xl:pt-28">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2">
-                                    <h2 className="font-semibold text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi adalah Partner Anda di dalam outsourcing</h2>
+                                    <h2 className="font-semibold text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi adalah Partner Anda di dalam outsourcing</h2>
 
                                     <motion.h1
                                         initial={{ opacity: 0, scale: 2 }}
@@ -86,14 +86,14 @@ const Index = () => {
                                         transition={{ duration: 0.3, scale: { type: 'spring', bounce: 0.1 } }}
                                         className="relative flex flex-col justify-center items-center xl:items-start"
                                     >
-                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl sm:text-6xl xl:text-7xl 3xl:text-8xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
-                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 sm:gap-15 xl:gap-14 3xl:gap-20 mt-7 xl:mt-13 3xl:mt-18 xl:-ml-5">
-                                            <div className="bg-yellow h-4 xl:h-8 3xl:h-11 w-[20rem] xl:w-[27rem] 3xl:w-[35.7rem]"></div>
-                                            <div className="bg-yellow h-4 xl:h-8 3xl:h-11 w-[13rem] xl:w-[16rem] 3xl:w-[22rem]"></div>
+                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
+                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 sm:gap-15 lg:gap-20 xl:gap-20 3xl:gap-20 mt-7 md:mt-12 lg:mt-16 xl:mt-16 3xl:mt-18 xl:-ml-5">
+                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[20rem] md:w-[29rem] lg:w-[40rem] xl:w-[36rem] 3xl:w-[35.7rem]"></div>
+                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[13rem] md:w-[18rem] lg:w-[25rem] xl:w-[22rem] 3xl:w-[22rem]"></div>
                                         </div>
                                     </motion.h1>
 
-                                    <p className="xl:mt-5 font-reguler text-md xl:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
+                                    <p className="xl:mt-5 font-reguler text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
                                         Dari arti dua pihak atau dua sisi, kami merasa HRD adalah
                                         bagian integral di perusahaan yang harus mementingkan dan
                                         mengatur hubungan antara perusahaan dan karyawan.</p>
@@ -130,7 +130,7 @@ const Index = () => {
                                 functionButton={handleKonsultasiButton}
                             />
 
-                            <p className="font-medium 3xl:font-light text-white text-sm sm:text-lg 3xl:text-2xl text-left leading-normal 3xl:pr-50">Hampir semua kandidat yang kami
+                            <p className="font-medium lg:px-16 xl:px-0 lg:pb-16 xl:pb-0 3xl:font-light text-white text-sm sm:text-lg md:text-2xl text-center xl:text-left leading-normal 3xl:pr-50">Hampir semua kandidat yang kami
                                 rekomendasikan langsung diterima bekerja.
                                 Ini bukan sekadar angka, ini bukti nyata
                                 bahwa kami paham apa yang dibutuhkan
@@ -143,7 +143,7 @@ const Index = () => {
 
             {/*SECTION 2*/}
             <div className="-mt-10 pt-10 pb-[3rem]">
-                <div className="px-6 xl:px-20 3xl:px-60 pt-25 3xl:pt-35 relative flex flex-col justify-between items-center bg-primary">
+                <div className="px-6 md:px-14 xl:px-20 3xl:px-60 pt-25 3xl:pt-35 relative flex flex-col justify-between items-center bg-primary">
                     <div className="flex flex-col justify-between items-center xl:items-start gap-8 xl:gap-16 pb-[10rem] xl:pb-[25rem] 3xl:pb-[35rem] w-full">
                         <motion.h2
                             ref={ref1}
@@ -151,7 +151,7 @@ const Index = () => {
                             animate={{ opacity: isInView1 ? 1 : 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                             id="animation"
-                            className="font-semibold text-white text-3xl xl:text-6xl text-center xl:text-left 3xl:max-w-5xl"
+                            className="font-semibold text-white text-3xl md:text-4xl xl:text-6xl text-center xl:text-left 3xl:max-w-5xl"
                         >
                             Mitra terpercaya lebih dari 10 tahun dalam berbagai industri
                         </motion.h2>
@@ -176,7 +176,7 @@ const Index = () => {
                                     animate={{ opacity: isInView3 ? 1 : 0 }}
                                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
                                     id="animation"
-                                    className="text-white font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-lg 3xl:max-w-2xl"
+                                    className="text-white font-reguler text-md md:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-lg 3xl:max-w-2xl"
                                 >
                                     Lebih dari 30+ perusahaan telah mempercayakan proses
                                     rekrutmen mereka kepada Dua Sisi. Dengan pendekatan
@@ -195,8 +195,8 @@ const Index = () => {
                                         id="animation"
                                         className="flex flex-col justify-center items-center"
                                     >
-                                        <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">30<span className="text-yellow">+</span></h3>
-                                        <h3 className="text-white font-reguler text-xs xl:text-sm 3xl:text-lg">Perusahaan sudah dibantu</h3>
+                                        <h3 className="text-white font-semibold text-8xl 3xl:text-9xl">30<span className="text-yellow">+</span></h3>
+                                        <h3 className="text-white font-reguler text-xs md:text-sm 3xl:text-lg">Perusahaan sudah dibantu</h3>
                                     </motion.div>
 
                                     <motion.div
@@ -207,8 +207,8 @@ const Index = () => {
                                         id="animation"
                                         className="flex flex-col justify-center items-center"
                                     >
-                                        <h3 className="text-white font-semibold text-7xl xl:text-8xl 3xl:text-9xl">95<span className="text-yellow">%</span></h3>
-                                        <h3 className="text-white font-reguler text-xs xl:text-sm 3xl:text-lg">Kandidat diterima</h3>
+                                        <h3 className="text-white font-semibold text-8xl 3xl:text-9xl">95<span className="text-yellow">%</span></h3>
+                                        <h3 className="text-white font-reguler text-xs md:text-sm 3xl:text-lg">Kandidat diterima</h3>
                                     </motion.div>
 
                                 </div>
@@ -220,7 +220,7 @@ const Index = () => {
                     </div>
                 </div>
 
-                <div className="px-6 xl:px-20 3xl:px-60 -mt-25 xl:-mt-83 3xl:-mt-105">
+                <div className="px-6 md:px-14 xl:px-20 3xl:px-60 -mt-25 xl:-mt-83 3xl:-mt-105">
                     <div className="">
                         <Swiper
                             direction={"horizontal"}
@@ -248,9 +248,9 @@ const Index = () => {
                             id="animation"
                             className="relative flex flex-col justify-center items-center"
                         >
-                            <h1 className="font-semibold text-black text-3xl sm:text-4xl xl:text-6xl text-center xl:text-left">Satu solusi, semua layanan HR</h1>
-                            <div className="absolute -z-10 flex flex-col sm:flex-row justify-center items-center xl:items-start gap-5 sm:gap-10 xl:gap-30 3xl:gap-25 mt-5 sm:mt-7 xl:mt-13 3xl:mt-12 sm:ml-22 xl:ml-33 3xl:ml-36">
-                                <div className="bg-yellow mr-5 sm:mr-0 h-3 xl:h-8 3xl:h-9 w-[5rem] sm:w-[6rem] xl:w-[10rem] 3xl:w-[11rem]"></div>
+                            <h1 className="font-semibold text-black text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center xl:text-left">Satu solusi, semua layanan HR</h1>
+                            <div className="absolute -z-10 flex flex-col sm:flex-row justify-center items-center xl:items-start gap-5 sm:gap-10 md:gap-21 xl:gap-30 3xl:gap-25 mt-5 sm:mt-7 xl:mt-13 3xl:mt-12 sm:ml-22 md:ml-10 xl:ml-33 3xl:ml-36">
+                                <div className="bg-yellow mr-5 sm:mr-0 h-3 xl:h-8 3xl:h-9 w-[5rem] sm:w-[6rem] md:w-[8rem] xl:w-[10rem] 3xl:w-[11rem]"></div>
                                 <div className="bg-yellow sm:ml-21 h-3 xl:h-8 3xl:h-9 w-[11rem] sm:w-[12rem] xl:w-[20rem] 3xl:w-[21rem]"></div>
                             </div>
                         </motion.div>
@@ -261,7 +261,7 @@ const Index = () => {
                             animate={{ opacity: isInView7 ? 1 : 0 }}
                             transition={{ duration: 0.8, ease: "easeOut", delay: 0.6}}
                             id="animation"
-                            className="text-black font-reguler text-md xl:text-lg 3xl:text-2xl text-center xl:max-w-4xl 3xl:max-w-7xl"
+                            className="text-black font-reguler text-md md:text-lg 3xl:text-2xl text-center xl:max-w-4xl 3xl:max-w-7xl"
                         >
                             Kami tidak hanya menyalurkan tenaga kerja, kami bantu kelola semuanya, dari awal hingga akhir.
                             Mulai dari pencarian kandidat terbaik, penjadwalan interview, hingga bimbingan HRD yang tepat sasaran. <br/><br/>
@@ -281,32 +281,32 @@ const Index = () => {
                         className="flex flex-col justify-between items-center pt-10 w-full"
                     >
                         <div className="flex flex-col xl:flex-wrap justify-between items-center xl:items-start gap-12 3xl:gap-20">
-                            <div className="flex flex-col xl:flex-row justify-between items-start xl:gap-16 3xl:gap-50">
+                            <div className="flex flex-col lg:flex-row justify-between items-start gap-12 xl:gap-16 3xl:gap-50">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-70">
-                                    <img src={Invoice} alt="invoice-icon" className="size-10 xl:size-14 3xl:size-20"/>
+                                    <img src={Invoice} alt="invoice-icon" className="size-10 md:size-20"/>
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
-                                        <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl">Invoice Bulanan</h3>
-                                        <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left">
+                                        <h3 className="text-black font-bold text-md md:text-xl 3xl:text-3xl">Invoice Bulanan</h3>
+                                        <p className="text-black font-reguler text-sm md:text-lg xl:text-lg 3xl:text-2xl text-center xl:text-left">
                                             Mempermudah penghitungan biaya gaji dan BPJS
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-70">
-                                    <img src={BPJS} alt="invoice-icon" className="size-10 xl:size-14 3xl:size-20"/>
+                                    <img src={BPJS} alt="invoice-icon" className="size-10 md:size-20"/>
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
-                                        <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl ">Pendaftaran BPJS</h3>
-                                        <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-xs">
+                                        <h3 className="text-black font-bold text-md md:text-xl 3xl:text-3xl ">Pendaftaran BPJS</h3>
+                                        <p className="text-black font-reguler text-sm md:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-xs">
                                             Melakukan pendaftaran dan pembayaran untuk semua karyawan kontrak Anda
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-80">
-                                    <img src={Interview} alt="invoice-icon" className="size-10 xl:size-14 3xl:size-20"/>
+                                    <img src={Interview} alt="invoice-icon" className="size-10 md:size-20"/>
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
-                                        <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl">Penjadwalan Interview</h3>
-                                        <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-xs">
+                                        <h3 className="text-black font-bold text-md md:text-xl 3xl:text-3xl">Penjadwalan Interview</h3>
+                                        <p className="text-black font-reguler text-sm md:text-lg xl:text-lg 3xl:text-2xl text-center xl:text-left xl:max-w-xs">
                                             Memudahankan untuk memfilter interview dengan menyiapkan
                                             kandidat yang terjadwal
                                         </p>
@@ -314,32 +314,32 @@ const Index = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col xl:flex-row justify-between items-start xl:gap-16 3xl:gap-50">
+                            <div className="flex flex-col lg:flex-row justify-between items-start gap-12 xl:gap-16 3xl:gap-50">
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-70">
-                                    <img src={Kandidat} alt="invoice-icon" className="size-10 xl:size-14 3xl:size-20"/>
+                                    <img src={Kandidat} alt="invoice-icon" className="size-10 md:size-20"/>
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
-                                        <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl">Pencarian Kandidat</h3>
-                                        <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left">
+                                        <h3 className="text-black font-bold text-md md:text-xl 3xl:text-3xl">Pencarian Kandidat</h3>
+                                        <p className="text-black font-reguler text-sm md:text-lg xl:text-lg 3xl:text-2xl text-center xl:text-left">
                                             Dari Interview sampai pencarian dengan system yang baik
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-70">
-                                    <img src={HRD} alt="invoice-icon" className="size-10 xl:size-14 3xl:size-20"/>
+                                    <img src={HRD} alt="invoice-icon" className="size-10 md:size-20"/>
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
-                                        <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl">Bimbingan HRD</h3>
-                                        <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left">
+                                        <h3 className="text-black font-bold text-md md:text-xl 3xl:text-3xl">Bimbingan HRD</h3>
+                                        <p className="text-black font-reguler text-sm md:text-lg xl:text-lg 3xl:text-2xl text-center xl:text-left">
                                             Memberikan guideline untuk peraturan HRD di tiap pekerjaan
                                         </p>
                                     </div>
                                 </div>
 
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2 3xl:gap-6 w-60 3xl:w-90">
-                                    <img src={Tracking} alt="invoice-icon" className="size-10 xl:size-14 3xl:size-20"/>
+                                    <img src={Tracking} alt="invoice-icon" className="size-10 md:size-20"/>
                                     <div className="flex flex-col justify-between items-center xl:items-start 3xl:gap-2">
-                                        <h3 className="text-black font-bold text-md xl:text-lg 3xl:text-3xl">Tracking Cuti & Ijin sakit</h3>
-                                        <p className="text-black font-reguler text-sm xl:text-lg 3xl:text-2xl text-center xl:text-left">
+                                        <h3 className="text-black font-bold text-md md:text-xl 3xl:text-3xl">Tracking Cuti & Ijin sakit</h3>
+                                        <p className="text-black font-reguler text-sm md:text-lg xl:text-lg 3xl:text-2xl text-center xl:text-left">
                                             Mempermudah penghitungan biaya gaji dan BPJS
                                         </p>
                                     </div>
@@ -351,7 +351,7 @@ const Index = () => {
             </div>
 
             {/*TESTIMONIAL*/}
-            <div className="px-6 xl:px-20 3xl:px-60 py-10 xl:py-25 3xl:py-35">
+            <div className="px-6 md:px-12 lg:px-16 xl:px-20 3xl:px-60 py-10 xl:py-25 3xl:py-35 mt-5">
                 <div className="flex flex-col justify-center items-center gap-6">
                     <h2 className="text-black font-semibold text-3xl xl:text-6xl text-center xl:pb-5">Apa Kata Customer Kami</h2>
 
