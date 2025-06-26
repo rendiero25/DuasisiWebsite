@@ -86,10 +86,10 @@ const Index = () => {
                                         transition={{ duration: 0.3, scale: { type: 'spring', bounce: 0.1 } }}
                                         className="relative flex flex-col justify-center items-center xl:items-start"
                                     >
-                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl xs1:text-6xl md:text-7xl md1:text-8xl 4xl:text-9xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
-                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 xs1:gap-15 sm:gap-15 md1:gap-18 lg:gap-20 xl:gap-20 3xl:gap-20 4xl:gap-23 mt-7 xs1:mt-10 md:mt-12 md1:mt-16 xl:mt-16 3xl:mt-18 4xl:mt-23 xl:-ml-5">
-                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[20rem] md:max-lg:w-[29rem] xl:w-[36rem] 3xl:w-[35.7rem] 4xl:w-[47rem]"></div>
-                                            <div className="bg-yellow h-4 md:h-8 3xl:h-11 w-[13rem] xs1:w-[15rem] md:w-[18rem] lg:w-[25rem] xl:w-[22rem] 3xl:w-[22rem] 4xl:w-[28rem]"></div>
+                                        <h1 className="font-semibold leading-normal sm:leading-tight 3xl:font-medium text-5xl xs1:text-7xl md1:text-8xl 4xl:text-9xl text-black text-center xl:text-left">Sumber Daya Manusia</h1>
+                                        <div className="absolute -z-10 flex flex-col justify-center items-center xl:items-start gap-12 xs1:gap-15 sm:gap-15 md1:gap-18 lg:gap-20 xl:gap-20 3xl:gap-20 4xl:gap-23 mt-7 xs1:mt-10 sm1:mt-14 md1:mt-16 xl:mt-16 3xl:mt-18 4xl:mt-23 xl:-ml-5">
+                                            <div className="bg-yellow h-4 sm1:h-6 md:h-8 3xl:h-11 w-[20rem] md:max-lg:w-[29rem] xl:w-[36rem] 3xl:w-[35.7rem] 4xl:w-[47rem]"></div>
+                                            <div className="bg-yellow h-4 sm1:h-6 md:h-8 3xl:h-11 w-[13rem] xs1:w-[15rem] md:w-[18rem] lg:w-[25rem] xl:w-[22rem] 3xl:w-[22rem] 4xl:w-[28rem]"></div>
                                         </div>
                                     </motion.h1>
 

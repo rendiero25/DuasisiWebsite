@@ -31,7 +31,7 @@ const Footer = () => {
 
                     <div className="max-w-2xl flex flex-col justify-between items-center xl:items-end gap-4">
                         <img src={LogoWhite} alt="logo-dsswhite" className="w-50 cursor-pointer" onClick={() => navigate("/")} />
-                        <p className="font-reguler text-white text-sm 3xl:text-lg leading-normal text-center xl:text-right">
+                        <p className="font-reguler text-[#BBBBBB] text-sm 3xl:text-lg leading-normal text-center xl:text-right">
                             Neo Soho Residence, Letjen S. Parman St No.28, RT.3/RW.5, <br/>
                             South Tanjung Duren, Grogol petamburan, <br/>
                             West Jakarta City, Jakarta 11470, Indonesia</p>
@@ -51,7 +51,7 @@ const Footer = () => {
                         </a>
                     </div>
 
-                    <p className="text-white text-sm font-reguler text-center xl:text-right">
+                    <p className="text-[#BBBBBB] text-sm font-reguler text-center xl:text-right">
                         Copyright C 2025 PT. Dua Sisi Sejahtera. All rights reserved. Developed by
                             <span>
                                 <a href="https://www.rendiero.dev" className="text-white font-bold text-md"> Rendiero</a>
