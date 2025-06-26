@@ -1,5 +1,5 @@
-// import {FaArrowRight} from "react-icons/fa6";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import {FaArrowRight} from "react-icons/fa6";
+// import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const Button = ({buttonClassName, spanClassName, circleClassName, arrowClassName, buttonName, functionButton}) => {
     return(
@@ -7,7 +7,7 @@ const Button = ({buttonClassName, spanClassName, circleClassName, arrowClassName
             <span className={spanClassName}>{buttonName}</span>
 
             <div className={circleClassName}>
-                <MdKeyboardDoubleArrowRight className={arrowClassName}/>
+                <FaArrowRight className={arrowClassName}/>
             </div>
         </button>
     )
