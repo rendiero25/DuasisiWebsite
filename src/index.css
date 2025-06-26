@@ -12,6 +12,7 @@
   --color-button: #FFB843;
   --color-yellow: #FEC109;
 
+  --breakpoint-xs1: 37.25rem;
   --breakpoint-md1: 50rem;
   --breakpoint-xl: 80rem; /*1280 x 768*/
   --breakpoint-2xl: 64rem; /*1336 x 768*/
