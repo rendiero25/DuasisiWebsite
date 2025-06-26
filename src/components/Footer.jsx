@@ -42,7 +42,7 @@ const Footer = () => {
 
                 <div className="flex flex-col xl:flex-row justify-between items-center gap-4 w-full">
                     <div className="flex flex-row justify-center items-center gap-2">
-                        <a href="https://wa.me/6289539336946?text=Halo%20Duasisi%20Sejahtera,%20Saya%20ingin%20konsultasi%20lebih%20lanjut">
+                        <a href="https://wa.me/62895393369464?text=Halo%20Duasisi%20Sejahtera,%20Saya%20ingin%20konsultasi%20lebih%20lanjut">
                             <img src={IconWA} alt="icon-wa" className="w-6" />
                         </a>
 
