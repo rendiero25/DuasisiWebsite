@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import { lazy, Suspense } from "react";
 
 // import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import Index from "./pages/index.jsx";
-import TentangKami from "./pages/TentangKami.jsx";
-import Layanan from "./pages/Layanan.jsx";
-import Lowongan from "./pages/Lowongan.jsx";
-import DetailLowonganPekerjaan from "./pages/DetailLowonganPekerjaan.jsx";
-import KontakKami from "./pages/KontakKami.jsx";
+const Footer = lazy(() => import("./components/Footer.jsx"));
+const Index = lazy(() => import("./pages/index.jsx"));
+const TentangKami = lazy(() => import("./pages/TentangKami.jsx"));
+const Layanan = lazy(() => import("./pages/Layanan.jsx"));
+const Lowongan = lazy(() => import("./pages/Lowongan.jsx"));
+const DetailLowonganPekerjaan = lazy(() => import("./pages/DetailLowonganPekerjaan.jsx"));
+const KontakKami = lazy(() => import("./pages/KontakKami.jsx"));
 
 const App = () => {
     return(

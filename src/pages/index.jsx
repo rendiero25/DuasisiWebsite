@@ -79,7 +79,7 @@ const Index = () => {
                                 <div className="flex flex-col justify-between items-center xl:items-start gap-2">
                                     <h2 className="font-semibold text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi adalah Partner Anda di dalam outsourcing</h2>
 
-                                    <motion.h1
+                                    <motion.div
                                         initial={{ opacity: 0, scale: 2 }}
                                         whileInView={{ opacity: 1, scale: 1 }}
                                         viewport={{ once: true, amount: 0.5 }}
@@ -91,7 +91,7 @@ const Index = () => {
                                             <div className="bg-yellow h-4 sm1:h-6 md:h-8 3xl:h-11 w-[20rem] md:max-lg:w-[29rem] xl:w-[36rem] 3xl:w-[35.7rem] 4xl:w-[47rem]"></div>
                                             <div className="bg-yellow h-4 sm1:h-6 md:h-8 3xl:h-11 w-[13rem] xs1:w-[15rem] md:w-[18rem] lg:w-[25rem] xl:w-[22rem] 3xl:w-[22rem] 4xl:w-[28rem]"></div>
                                         </div>
-                                    </motion.h1>
+                                    </motion.div>
 
                                     <p className="xl:mt-5 font-reguler text-md md:text-lg 3xl:text-2xl text-black text-center xl:text-left">Dua Sisi dibangun dengan filosofi keuntungan bersama.
                                         Dari arti dua pihak atau dua sisi, kami merasa HRD adalah

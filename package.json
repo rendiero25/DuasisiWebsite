@@ -2,6 +2,7 @@
   "name": "duasisi-website",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://www.duasisisejahtera.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
